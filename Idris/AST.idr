@@ -702,29 +702,11 @@ genIR m = do
 
 -----------------------------------------------------------------------------
 
-main : IO ()
-main = do
-  -- let fName = "Main5.idr"
-  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "Main5")
-  -- let fName = "ParseEx.idr"
-  -- let fName = "SumEuler.idr"
+main : String -> String -> IO ()
+main i o = do
+  let fName = i
 
-  let fName = "ParSkel.idr"
-
-  -- let fName = "ParSumEuler2.idr"
-
-  -- let fName = "ParMatMul.idr"
-
-  -- let fName = "ParQueens.idr"
-
-  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "ParseEx")
-  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "SumEuler")
-  let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "ParSkel")
-  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "ParSumEuler2")
-
-  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "ParMatMul")
-
-  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "ParQueens")
+  let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing o)
 
   Right rawSrc <- readFile fName
     | Left err => printLn err
