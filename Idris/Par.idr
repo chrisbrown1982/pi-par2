@@ -7,6 +7,18 @@ public export
 data Proc : Type -> Type -> Type where 
     MkProc : (i : Type) -> (o : Type) -> Proc i o 
 
+-- puts a function inside a process 
+public export
+(<*>) : (f : a -> b) -> Proc a b -> Proc a b
+
+-- apply process
+-- apply a process to its input
+-- semantics are that the input is streamed to the process
+-- output is streamed out
+public export
+(<$>) : (p : Proc a b) -> Vect n a -> Vect n b
+-- implementation is built in.
+
 public export
 data ParVect : Nat -> Fin n -> Type -> Type where 
     NilPV : ParVect 0 b a 
@@ -66,20 +78,6 @@ toVectPart (S c) bo xs = case split' (S c) xs of
                                     Just (s ** vp) =>
                                      let r =  MkPar bo prf chunk vp
                                      in Just ((S s) ** r)
-                             
-
-
--- apply process
--- apply a process to its input
--- semantics are that the input is streamed to the process
--- output is streamed out
-public export
-(<$>) : (p : Proc a b) -> Vect n a -> Vect n b
--- implementation is built in.
-
--- puts a function inside a process 
-public export
-(<*>) : (f : a -> b) -> Proc a b -> Proc a b
 
 public export
 parMap : (f : a -> a) -> ParVect n b a -> ParVect n b a 
