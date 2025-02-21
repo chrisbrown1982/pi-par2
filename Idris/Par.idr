@@ -11,6 +11,7 @@ public export
 data ParVect : Nat -> Fin n -> Type -> Type where 
     NilPV : ParVect 0 b a 
     MkParV :(b : Fin k)
+         -> (n : Nat)
          -> (prf: LTE n k)
          -> (hd : Vect n a)
          -> (proc : Proc a a) 
@@ -83,11 +84,11 @@ public export
 public export
 parMap : (f : a -> a) -> ParVect n b a -> ParVect n b a 
 parMap f NilPV = NilPV 
-parMap f (MkParV bo pr hd proc tl) = 
+parMap f (MkParV bo n pr hd proc tl) = 
   let fhd = f <*> proc in 
-    MkParV bo pr (fhd <$> hd) proc (parMap f tl)
+    MkParV bo n pr (fhd <$> hd) proc (parMap f tl)
 
-seq  : (n : Nat) -> ParVect n b a -> (k ** Vect k a) 
-seq Z NilPV = (Z **  [] )
-seq (S m) (MkParV bo pr hd proc tl) = case seq m tl of 
-                                    (s ** tl') => (s + (S m) ** (hd ++ tl'))
+seq  : ParVect n b a -> (k ** Vect k a) 
+seq NilPV = (Z **  [] )
+seq (MkParV bo n pr hd proc tl) = case seq tl of 
+                                    (s ** tl') => let r = ((hd ++ tl')) in (plus n s ** r)
