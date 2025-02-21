@@ -54,29 +54,44 @@ toVectPart (S c) bo xs = case split' (S c) xs of
                                 let r =  MkPar bo prf chunk vp
                                 in Just ((S s) ** r)
 
+--------------------------------------------------------------------
+
 public export
 data Process : Type -> Type -> Type where 
     MkProc : (i : Type) -> (o : Type) -> Process i o 
 
+-- create a suspension, a promise to a result
+data Sus : Type -> Type where 
+    MkSus : (a : Type) -> Sus a 
+
 -- puts a function inside a process 
 public export
 process : (f : a -> b) -> Process a b
+-- implementation built in
+
 
 -- apply process
 -- apply a process to its input
 -- semantics are that the input is streamed to the process
 -- output is streamed out
 public export
-(<$>) : (p : Process a b) -> a-> b
+(<$>) : (p : Process a b) -> a-> Sus b
 -- implementation is built in.
 
 public export 
 spawn : List (Process a b) -> List a -> List b
 
+public export
+sync : Sus a -> a
+
+parMap' : (f : a ->b) -> Vect n a -> Vect n (Sus b)
+parMap' f [] = []
+parMap' f (x::xs) = (process f <$> x ) :: parMap' f xs
+
 public export 
 parMap : (f : a -> b) -> Vect n a -> Vect n b 
 parMap f [] = [] 
-parMap f (x::xs) = (process f <$> x) :: parMap f xs 
+parMap f xs = map sync (parMap' f xs)
 
 public export
 parMapPart : (f : a -> b) -> VectPart n bo a -> VectPart n bo b 
