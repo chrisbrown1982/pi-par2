@@ -5,7 +5,7 @@
 drain_stream2( []) -> 
   receive 
     {sus_data, M} -> 
-        io:format("drain2 received ~p ~n", [M]),
+        % io:format("drain2 received ~p ~n", [M]),
         drain_stream2( [M]);
     {release, Pid} ->
         % io:format("drain2 releasing empty ~n", []),
@@ -15,10 +15,10 @@ drain_stream2( []) ->
 drain_stream2([R | Results]) -> 
   receive 
     {sus_data, M} -> 
-        io:format("drain2 received ~p ~n", [M]),
+        % io:format("drain2 received ~p ~n", [M]),
         drain_stream2( [R | Results] ++ [M]);
     {release, Pid} ->
-        io:format("drain2 releasing ~p ~n", [R]),
+        % io:format("drain2 releasing ~p ~n", [R]),
         Pid ! R,
         drain_stream2(Results)
   end.
@@ -27,7 +27,7 @@ drain_stream2([R | Results]) ->
 drain_stream() -> 
   receive 
     {sus_data, M} -> 
-        io:format("drain received ~p ~n", [M]),
+        % io:format("drain received ~p ~n", [M]),
         drain_stream2( [M])
   end.
 
@@ -36,7 +36,7 @@ process_function_stream(Fun, Sus) ->
     receive
         stop -> stop; 
         {proc_data, M} ->
-            io:format("process_function_stream: ~p~n", [M]),
+            % io:format("process_function_stream: ~p~n", [M]),
             Sus ! {sus_data, Fun(M)},
             process_function_stream(Fun, Sus)
     end.
@@ -51,14 +51,14 @@ process(F) ->
 
 distributor([Pid | Pids]) ->
     receive 
-        M -> io:format("distributor received: ~p~n", [M]), 
+        M -> % io:format("distributor received: ~p~n", [M]), 
              Pid ! {proc_data, M},
              distributor( lists:append(Pids, [Pid]))
     end.
 
 processN2 (0, F, Sus) -> [];
 processN2 (N, F, Sus) ->
-    io:format("creating farm process: ~n", []),
+    % io:format("creating farm process: ~n", []),
     Pid = spawn(play2, process_function_stream, [ F, Sus]),
     [Pid | processN2((N-1), F, Sus)].
 
@@ -80,7 +80,7 @@ app_stream({Pid, Sus}, X) ->
 sync_stream(Sus) ->
     Sus ! {release, self()},
     receive 
-        M ->  io:format("sync_stream releasing: ~p ~n", [M]),
+        M ->  % io:format("sync_stream releasing: ~p ~n", [M]),
               M
     end. 
 
@@ -92,7 +92,7 @@ sync_stream2(Sus, N) ->
     receive 
         stop -> [];
         [] -> sync_stream2(Sus, N);
-        M ->  io:format("sync_stream releasing: ~p ~n", [M]),
+        M ->  %  io:format("sync_stream releasing: ~p ~n", [M]),
               [M | sync_stream2(Sus, N-1)]
     end. 
 
@@ -116,7 +116,7 @@ taskFarm (F, Nw, Inputs) ->
 connect({Pids, Sus, Distr}, Sus2, 0) -> Sus;
 connect({Pids, Sus, Distr}, Sus2, N) ->
     R = sync_stream2(Sus2,1),
-    io:format ("Sending ~p to Stage 2 ~n", [R]),
+    % io:format ("Sending ~p to Stage 2 ~n", [R]),
     distributeL({Pids, Sus, Distr}, R),
     connect({Pids, Sus, Distr}, Sus2, N-1).
 
