@@ -1,0 +1,51 @@
+for ((i=0 ; i < 10 ; i++)); do
+	erl -noinput -eval 'parQueens:run(2, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(4, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(6, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(8, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(10, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(12, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(14, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(16, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(18, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(20, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(22, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(24, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(26, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parQueens:run(28, 12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+
+
+
+
+
+
+
+
+

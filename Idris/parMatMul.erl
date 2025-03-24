@@ -8,7 +8,7 @@ transpose1 ( B )  ->
 .
 
 red ( Pair , Sum )  ->
-         ( utils:fst2( Pair  )  )  *  ( utils:snd2( Pair  )  )  + Sum
+         ( element(1, Pair  )  )  *  ( element(2, Pair  )  )  + Sum
 .
 
 dot_product ( A , B )  ->
@@ -43,7 +43,7 @@ farmIt ( Nw , MatA , MatB )  ->
 
 run( Nw, Size) ->
 	erlang:system_flag(schedulers_online, Nw),
-	MatA =  parMatMul:mkMsg(lists:duplicate(Size, lists:seq(1,Size))),
+	MatA =  lists:duplicate(Size, lists:seq(1,Size)),
 	MatB = parMatMul:transpose1(lists:duplicate(Size, lists:seq(1,Size))),
 	io:format("MatMul ~p~n", [sk_profile:benchmark(fun ?MODULE:farmIt/3, [Nw, MatA, MatB], 1)]),
 	io:format("Done with examples on ~p cores.~n--------~n", [Nw]).

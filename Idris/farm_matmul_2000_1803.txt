@@ -1,0 +1,1120 @@
+MatMul [{n,1},
+        {min,376939841},
+        {max,376939841},
+        {med,376939841},
+        {mean,376939841.0},
+        {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+MatMul [{n,1},
+        {min,382181272},
+        {max,382181272},
+        {med,382181272},
+        {mean,382181272.0},
+        {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+MatMul [{n,1},
+        {min,377635293},
+        {max,377635293},
+        {med,377635293},
+        {mean,377635293.0},
+        {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+MatMul [{n,1},
+        {min,378381451},
+        {max,378381451},
+        {med,378381451},
+        {mean,378381451.0},
+        {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+MatMul [{n,1},
+        {min,375408157},
+        {max,375408157},
+        {med,375408157},
+        {mean,375408157.0},
+        {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+MatMul [{n,1},
+        {min,373397346},
+        {max,373397346},
+        {med,373397346},
+        {mean,373397346.0},
+        {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+MatMul [{n,1},
+        {min,378115304},
+        {max,378115304},
+        {med,378115304},
+        {mean,378115304.0},
+        {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+MatMul [{n,1},
+        {min,385868418},
+        {max,385868418},
+        {med,385868418},
+        {mean,385868418.0},
+        {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+MatMul [{n,1},
+        {min,377118537},
+        {max,377118537},
+        {med,377118537},
+        {mean,377118537.0},
+        {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+MatMul [{n,1},
+        {min,374210652},
+        {max,374210652},
+        {med,374210652},
+        {mean,374210652.0},
+        {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+MatMul [{n,1},
+        {min,205393379},
+        {max,205393379},
+        {med,205393379},
+        {mean,205393379.0},
+        {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+MatMul [{n,1},
+        {min,187948748},
+        {max,187948748},
+        {med,187948748},
+        {mean,187948748.0},
+        {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+MatMul [{n,1},
+        {min,186979148},
+        {max,186979148},
+        {med,186979148},
+        {mean,186979148.0},
+        {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+MatMul [{n,1},
+        {min,186816632},
+        {max,186816632},
+        {med,186816632},
+        {mean,186816632.0},
+        {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+MatMul [{n,1},
+        {min,189294347},
+        {max,189294347},
+        {med,189294347},
+        {mean,189294347.0},
+        {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+MatMul [{n,1},
+        {min,189397675},
+        {max,189397675},
+        {med,189397675},
+        {mean,189397675.0},
+        {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+MatMul [{n,1},
+        {min,189183583},
+        {max,189183583},
+        {med,189183583},
+        {mean,189183583.0},
+        {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+MatMul [{n,1},
+        {min,188656954},
+        {max,188656954},
+        {med,188656954},
+        {mean,188656954.0},
+        {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+MatMul [{n,1},
+        {min,208583576},
+        {max,208583576},
+        {med,208583576},
+        {mean,208583576.0},
+        {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+MatMul [{n,1},
+        {min,189093566},
+        {max,189093566},
+        {med,189093566},
+        {mean,189093566.0},
+        {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+MatMul [{n,1},
+        {min,136377703},
+        {max,136377703},
+        {med,136377703},
+        {mean,136377703.0},
+        {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+MatMul [{n,1},
+        {min,136487058},
+        {max,136487058},
+        {med,136487058},
+        {mean,136487058.0},
+        {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+MatMul [{n,1},
+        {min,137442341},
+        {max,137442341},
+        {med,137442341},
+        {mean,137442341.0},
+        {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+MatMul [{n,1},
+        {min,141305950},
+        {max,141305950},
+        {med,141305950},
+        {mean,141305950.0},
+        {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+MatMul [{n,1},
+        {min,138118083},
+        {max,138118083},
+        {med,138118083},
+        {mean,138118083.0},
+        {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+MatMul [{n,1},
+        {min,134966729},
+        {max,134966729},
+        {med,134966729},
+        {mean,134966729.0},
+        {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+MatMul [{n,1},
+        {min,139344611},
+        {max,139344611},
+        {med,139344611},
+        {mean,139344611.0},
+        {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+MatMul [{n,1},
+        {min,133846350},
+        {max,133846350},
+        {med,133846350},
+        {mean,133846350.0},
+        {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+MatMul [{n,1},
+        {min,136437683},
+        {max,136437683},
+        {med,136437683},
+        {mean,136437683.0},
+        {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+MatMul [{n,1},
+        {min,138061410},
+        {max,138061410},
+        {med,138061410},
+        {mean,138061410.0},
+        {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+MatMul [{n,1},
+        {min,106270941},
+        {max,106270941},
+        {med,106270941},
+        {mean,106270941.0},
+        {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+MatMul [{n,1},
+        {min,107225615},
+        {max,107225615},
+        {med,107225615},
+        {mean,107225615.0},
+        {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+MatMul [{n,1},
+        {min,105989642},
+        {max,105989642},
+        {med,105989642},
+        {mean,105989642.0},
+        {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+MatMul [{n,1},
+        {min,107248815},
+        {max,107248815},
+        {med,107248815},
+        {mean,107248815.0},
+        {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+MatMul [{n,1},
+        {min,105770858},
+        {max,105770858},
+        {med,105770858},
+        {mean,105770858.0},
+        {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+MatMul [{n,1},
+        {min,107364671},
+        {max,107364671},
+        {med,107364671},
+        {mean,107364671.0},
+        {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+MatMul [{n,1},
+        {min,105915173},
+        {max,105915173},
+        {med,105915173},
+        {mean,105915173.0},
+        {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+MatMul [{n,1},
+        {min,106125353},
+        {max,106125353},
+        {med,106125353},
+        {mean,106125353.0},
+        {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+MatMul [{n,1},
+        {min,107248338},
+        {max,107248338},
+        {med,107248338},
+        {mean,107248338.0},
+        {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+MatMul [{n,1},
+        {min,104497496},
+        {max,104497496},
+        {med,104497496},
+        {mean,104497496.0},
+        {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+MatMul [{n,1},
+        {min,87213117},
+        {max,87213117},
+        {med,87213117},
+        {mean,87213117.0},
+        {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+MatMul [{n,1},
+        {min,85642397},
+        {max,85642397},
+        {med,85642397},
+        {mean,85642397.0},
+        {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+MatMul [{n,1},
+        {min,85606044},
+        {max,85606044},
+        {med,85606044},
+        {mean,85606044.0},
+        {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+MatMul [{n,1},
+        {min,86806662},
+        {max,86806662},
+        {med,86806662},
+        {mean,86806662.0},
+        {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+MatMul [{n,1},
+        {min,87724607},
+        {max,87724607},
+        {med,87724607},
+        {mean,87724607.0},
+        {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+MatMul [{n,1},
+        {min,87278023},
+        {max,87278023},
+        {med,87278023},
+        {mean,87278023.0},
+        {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+MatMul [{n,1},
+        {min,86538186},
+        {max,86538186},
+        {med,86538186},
+        {mean,86538186.0},
+        {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+MatMul [{n,1},
+        {min,87008162},
+        {max,87008162},
+        {med,87008162},
+        {mean,87008162.0},
+        {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+MatMul [{n,1},
+        {min,87629936},
+        {max,87629936},
+        {med,87629936},
+        {mean,87629936.0},
+        {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+MatMul [{n,1},
+        {min,86425713},
+        {max,86425713},
+        {med,86425713},
+        {mean,86425713.0},
+        {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+MatMul [{n,1},
+        {min,73409088},
+        {max,73409088},
+        {med,73409088},
+        {mean,73409088.0},
+        {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+MatMul [{n,1},
+        {min,73297335},
+        {max,73297335},
+        {med,73297335},
+        {mean,73297335.0},
+        {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+MatMul [{n,1},
+        {min,73281049},
+        {max,73281049},
+        {med,73281049},
+        {mean,73281049.0},
+        {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+MatMul [{n,1},
+        {min,74002909},
+        {max,74002909},
+        {med,74002909},
+        {mean,74002909.0},
+        {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+MatMul [{n,1},
+        {min,73416553},
+        {max,73416553},
+        {med,73416553},
+        {mean,73416553.0},
+        {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+MatMul [{n,1},
+        {min,73361737},
+        {max,73361737},
+        {med,73361737},
+        {mean,73361737.0},
+        {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+MatMul [{n,1},
+        {min,73438571},
+        {max,73438571},
+        {med,73438571},
+        {mean,73438571.0},
+        {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+MatMul [{n,1},
+        {min,73716297},
+        {max,73716297},
+        {med,73716297},
+        {mean,73716297.0},
+        {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+MatMul [{n,1},
+        {min,74050654},
+        {max,74050654},
+        {med,74050654},
+        {mean,74050654.0},
+        {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+MatMul [{n,1},
+        {min,73393753},
+        {max,73393753},
+        {med,73393753},
+        {mean,73393753.0},
+        {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+MatMul [{n,1},
+        {min,64443369},
+        {max,64443369},
+        {med,64443369},
+        {mean,64443369.0},
+        {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+MatMul [{n,1},
+        {min,63710143},
+        {max,63710143},
+        {med,63710143},
+        {mean,63710143.0},
+        {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+MatMul [{n,1},
+        {min,63475826},
+        {max,63475826},
+        {med,63475826},
+        {mean,63475826.0},
+        {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+MatMul [{n,1},
+        {min,64461964},
+        {max,64461964},
+        {med,64461964},
+        {mean,64461964.0},
+        {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+MatMul [{n,1},
+        {min,63683842},
+        {max,63683842},
+        {med,63683842},
+        {mean,63683842.0},
+        {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+MatMul [{n,1},
+        {min,63805037},
+        {max,63805037},
+        {med,63805037},
+        {mean,63805037.0},
+        {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+MatMul [{n,1},
+        {min,64161207},
+        {max,64161207},
+        {med,64161207},
+        {mean,64161207.0},
+        {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+MatMul [{n,1},
+        {min,63970410},
+        {max,63970410},
+        {med,63970410},
+        {mean,63970410.0},
+        {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+MatMul [{n,1},
+        {min,63418415},
+        {max,63418415},
+        {med,63418415},
+        {mean,63418415.0},
+        {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+MatMul [{n,1},
+        {min,63699280},
+        {max,63699280},
+        {med,63699280},
+        {mean,63699280.0},
+        {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+MatMul [{n,1},
+        {min,56846756},
+        {max,56846756},
+        {med,56846756},
+        {mean,56846756.0},
+        {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+MatMul [{n,1},
+        {min,56869468},
+        {max,56869468},
+        {med,56869468},
+        {mean,56869468.0},
+        {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+MatMul [{n,1},
+        {min,56331134},
+        {max,56331134},
+        {med,56331134},
+        {mean,56331134.0},
+        {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+MatMul [{n,1},
+        {min,57307560},
+        {max,57307560},
+        {med,57307560},
+        {mean,57307560.0},
+        {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+MatMul [{n,1},
+        {min,57284464},
+        {max,57284464},
+        {med,57284464},
+        {mean,57284464.0},
+        {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+MatMul [{n,1},
+        {min,56451175},
+        {max,56451175},
+        {med,56451175},
+        {mean,56451175.0},
+        {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+MatMul [{n,1},
+        {min,56726370},
+        {max,56726370},
+        {med,56726370},
+        {mean,56726370.0},
+        {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+MatMul [{n,1},
+        {min,57074838},
+        {max,57074838},
+        {med,57074838},
+        {mean,57074838.0},
+        {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+MatMul [{n,1},
+        {min,56949628},
+        {max,56949628},
+        {med,56949628},
+        {mean,56949628.0},
+        {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+MatMul [{n,1},
+        {min,58023892},
+        {max,58023892},
+        {med,58023892},
+        {mean,58023892.0},
+        {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+MatMul [{n,1},
+        {min,51930887},
+        {max,51930887},
+        {med,51930887},
+        {mean,51930887.0},
+        {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+MatMul [{n,1},
+        {min,51396671},
+        {max,51396671},
+        {med,51396671},
+        {mean,51396671.0},
+        {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+MatMul [{n,1},
+        {min,52220684},
+        {max,52220684},
+        {med,52220684},
+        {mean,52220684.0},
+        {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+MatMul [{n,1},
+        {min,52059624},
+        {max,52059624},
+        {med,52059624},
+        {mean,52059624.0},
+        {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+MatMul [{n,1},
+        {min,52172124},
+        {max,52172124},
+        {med,52172124},
+        {mean,52172124.0},
+        {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+MatMul [{n,1},
+        {min,51893614},
+        {max,51893614},
+        {med,51893614},
+        {mean,51893614.0},
+        {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+MatMul [{n,1},
+        {min,52229758},
+        {max,52229758},
+        {med,52229758},
+        {mean,52229758.0},
+        {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+MatMul [{n,1},
+        {min,52180088},
+        {max,52180088},
+        {med,52180088},
+        {mean,52180088.0},
+        {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+MatMul [{n,1},
+        {min,51860111},
+        {max,51860111},
+        {med,51860111},
+        {mean,51860111.0},
+        {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+MatMul [{n,1},
+        {min,52135815},
+        {max,52135815},
+        {med,52135815},
+        {mean,52135815.0},
+        {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+MatMul [{n,1},
+        {min,47767288},
+        {max,47767288},
+        {med,47767288},
+        {mean,47767288.0},
+        {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+MatMul [{n,1},
+        {min,48206161},
+        {max,48206161},
+        {med,48206161},
+        {mean,48206161.0},
+        {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+MatMul [{n,1},
+        {min,47719478},
+        {max,47719478},
+        {med,47719478},
+        {mean,47719478.0},
+        {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+MatMul [{n,1},
+        {min,48112939},
+        {max,48112939},
+        {med,48112939},
+        {mean,48112939.0},
+        {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+MatMul [{n,1},
+        {min,47504087},
+        {max,47504087},
+        {med,47504087},
+        {mean,47504087.0},
+        {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+MatMul [{n,1},
+        {min,47581603},
+        {max,47581603},
+        {med,47581603},
+        {mean,47581603.0},
+        {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+MatMul [{n,1},
+        {min,47784650},
+        {max,47784650},
+        {med,47784650},
+        {mean,47784650.0},
+        {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+MatMul [{n,1},
+        {min,47773260},
+        {max,47773260},
+        {med,47773260},
+        {mean,47773260.0},
+        {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+MatMul [{n,1},
+        {min,47631717},
+        {max,47631717},
+        {med,47631717},
+        {mean,47631717.0},
+        {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+MatMul [{n,1},
+        {min,47779684},
+        {max,47779684},
+        {med,47779684},
+        {mean,47779684.0},
+        {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+MatMul [{n,1},
+        {min,45196209},
+        {max,45196209},
+        {med,45196209},
+        {mean,45196209.0},
+        {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+MatMul [{n,1},
+        {min,44380854},
+        {max,44380854},
+        {med,44380854},
+        {mean,44380854.0},
+        {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+MatMul [{n,1},
+        {min,44234150},
+        {max,44234150},
+        {med,44234150},
+        {mean,44234150.0},
+        {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+MatMul [{n,1},
+        {min,44316648},
+        {max,44316648},
+        {med,44316648},
+        {mean,44316648.0},
+        {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+MatMul [{n,1},
+        {min,44573998},
+        {max,44573998},
+        {med,44573998},
+        {mean,44573998.0},
+        {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+MatMul [{n,1},
+        {min,44119058},
+        {max,44119058},
+        {med,44119058},
+        {mean,44119058.0},
+        {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+MatMul [{n,1},
+        {min,44484418},
+        {max,44484418},
+        {med,44484418},
+        {mean,44484418.0},
+        {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+MatMul [{n,1},
+        {min,44118212},
+        {max,44118212},
+        {med,44118212},
+        {mean,44118212.0},
+        {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+MatMul [{n,1},
+        {min,44388617},
+        {max,44388617},
+        {med,44388617},
+        {mean,44388617.0},
+        {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+MatMul [{n,1},
+        {min,44104021},
+        {max,44104021},
+        {med,44104021},
+        {mean,44104021.0},
+        {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+MatMul [{n,1},
+        {min,41713907},
+        {max,41713907},
+        {med,41713907},
+        {mean,41713907.0},
+        {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+MatMul [{n,1},
+        {min,41918759},
+        {max,41918759},
+        {med,41918759},
+        {mean,41918759.0},
+        {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+MatMul [{n,1},
+        {min,42241483},
+        {max,42241483},
+        {med,42241483},
+        {mean,42241483.0},
+        {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+MatMul [{n,1},
+        {min,42479508},
+        {max,42479508},
+        {med,42479508},
+        {mean,42479508.0},
+        {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+MatMul [{n,1},
+        {min,41673085},
+        {max,41673085},
+        {med,41673085},
+        {mean,41673085.0},
+        {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+MatMul [{n,1},
+        {min,41855667},
+        {max,41855667},
+        {med,41855667},
+        {mean,41855667.0},
+        {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+MatMul [{n,1},
+        {min,42067496},
+        {max,42067496},
+        {med,42067496},
+        {mean,42067496.0},
+        {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+MatMul [{n,1},
+        {min,42264396},
+        {max,42264396},
+        {med,42264396},
+        {mean,42264396.0},
+        {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+MatMul [{n,1},
+        {min,41651555},
+        {max,41651555},
+        {med,41651555},
+        {mean,41651555.0},
+        {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+MatMul [{n,1},
+        {min,42125316},
+        {max,42125316},
+        {med,42125316},
+        {mean,42125316.0},
+        {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+MatMul [{n,1},
+        {min,40045160},
+        {max,40045160},
+        {med,40045160},
+        {mean,40045160.0},
+        {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+MatMul [{n,1},
+        {min,39515315},
+        {max,39515315},
+        {med,39515315},
+        {mean,39515315.0},
+        {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+MatMul [{n,1},
+        {min,39875632},
+        {max,39875632},
+        {med,39875632},
+        {mean,39875632.0},
+        {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+MatMul [{n,1},
+        {min,39998006},
+        {max,39998006},
+        {med,39998006},
+        {mean,39998006.0},
+        {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+MatMul [{n,1},
+        {min,39847961},
+        {max,39847961},
+        {med,39847961},
+        {mean,39847961.0},
+        {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+MatMul [{n,1},
+        {min,39752906},
+        {max,39752906},
+        {med,39752906},
+        {mean,39752906.0},
+        {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+MatMul [{n,1},
+        {min,39790523},
+        {max,39790523},
+        {med,39790523},
+        {mean,39790523.0},
+        {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+MatMul [{n,1},
+        {min,39532470},
+        {max,39532470},
+        {med,39532470},
+        {mean,39532470.0},
+        {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+MatMul [{n,1},
+        {min,40275757},
+        {max,40275757},
+        {med,40275757},
+        {mean,40275757.0},
+        {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+MatMul [{n,1},
+        {min,40076405},
+        {max,40076405},
+        {med,40076405},
+        {mean,40076405.0},
+        {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+MatMul [{n,1},
+        {min,37922953},
+        {max,37922953},
+        {med,37922953},
+        {mean,37922953.0},
+        {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+MatMul [{n,1},
+        {min,38424121},
+        {max,38424121},
+        {med,38424121},
+        {mean,38424121.0},
+        {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+MatMul [{n,1},
+        {min,38089453},
+        {max,38089453},
+        {med,38089453},
+        {mean,38089453.0},
+        {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+MatMul [{n,1},
+        {min,38650772},
+        {max,38650772},
+        {med,38650772},
+        {mean,38650772.0},
+        {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+MatMul [{n,1},
+        {min,38518418},
+        {max,38518418},
+        {med,38518418},
+        {mean,38518418.0},
+        {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+MatMul [{n,1},
+        {min,38125281},
+        {max,38125281},
+        {med,38125281},
+        {mean,38125281.0},
+        {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+MatMul [{n,1},
+        {min,38069583},
+        {max,38069583},
+        {med,38069583},
+        {mean,38069583.0},
+        {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+MatMul [{n,1},
+        {min,38307501},
+        {max,38307501},
+        {med,38307501},
+        {mean,38307501.0},
+        {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+MatMul [{n,1},
+        {min,38567322},
+        {max,38567322},
+        {med,38567322},
+        {mean,38567322.0},
+        {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+MatMul [{n,1},
+        {min,38365041},
+        {max,38365041},
+        {med,38365041},
+        {mean,38365041.0},
+        {std_dev,0.0}]
+Done with examples on 28 cores.
+--------

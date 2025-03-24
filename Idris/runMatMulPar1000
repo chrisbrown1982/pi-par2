@@ -1,0 +1,42 @@
+for ((i=0 ; i < 10 ; i++)); do
+	erl -noinput -eval 'parMatMul:run(2, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(4, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(6, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(8, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(10, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(12, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(14, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(16, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(18, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(20, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(22, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(24, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(26, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'parMatMul:run(28, 1000).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
