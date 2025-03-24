@@ -1,0 +1,3 @@
+for ((i=0 ; i < 10 ; i++)); do
+	erl -noinput -eval 'queens:run(12).' -s init stop -pa ~/hlpp2024/skel/ebin/
+done
