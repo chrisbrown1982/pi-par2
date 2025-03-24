@@ -4,7 +4,7 @@
 
 
 check ( {C,L} , {I,J} )  -> 
-	 ( L  == J  )  or  (  ( C  + L  )  ==  ( I  + J  )  )  or  (  ( utils:minus( C  , L  )  )  ==  ( utils:minus( I  , J  )  )  ) .
+	 ( L  == J  )  or  (  ( C  + L  )  ==  ( I  + J  )  )  or  (  ( ( C - L  )  )  ==  ( ( I - J  )  )  ) .
 
 safe ( P , N )  -> 
 	lists:foldr( fun(X,Y) -> X and Y end  , true  ,  ( [not(  ( ?MODULE:check( {i ,j } , {length( P  )  + 1 ,N } )  )  )  || {I,J} <-  ( lists:zip( lists:seq( 1  , length( P  )  )  , P  )  ) ] )  ) .
@@ -12,7 +12,7 @@ safe ( P , N )  ->
 rainhas2 ( 0 , Linha , Numero )  -> 
 	[[]];
 rainhas2 ( M , Linha , Numero )  -> 
-[lists:append(p  , [n ]) || P <- ?MODULE:rainhas2(  ( utils:minus( M  , 1  )  )  , Linha  , Numero  ) ,N <-  ( lists:append(lists:seq( Linha  , Numero  )  , lists:seq( 1  , utils:minus( Linha  , 1  )  ) ) ) ,?MODULE:safe( P  , N  ) ].
+[lists:append(p  , [n ]) || P <- ?MODULE:rainhas2(  ( ( M - 1  )  )  , Linha  , Numero  ) ,N <-  ( lists:append(lists:seq( Linha  , Numero  )  , lists:seq( 1  , ( Linha - 1  )  ) ) ) ,?MODULE:safe( P  , N  ) ].
 
 prainhas ( Numero , Linha )  -> 
 	?MODULE:rainhas2( Numero  , Linha  , Numero  ) .
