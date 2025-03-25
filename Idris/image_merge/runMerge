@@ -1,0 +1,3 @@
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:run(100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done

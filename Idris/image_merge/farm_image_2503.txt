@@ -1,0 +1,574 @@
+Image Merge Farm [{n,1},
+                  {min,42207859},
+                  {max,42207859},
+                  {med,42207859},
+                  {mean,42207859.0},
+                  {std_dev,0.0}]
+Done on 2 cores 
+Image Merge Farm [{n,1},
+                  {min,43702282},
+                  {max,43702282},
+                  {med,43702282},
+                  {mean,43702282.0},
+                  {std_dev,0.0}]
+Done on 2 cores 
+Image Merge Farm [{n,1},
+                  {min,44099385},
+                  {max,44099385},
+                  {med,44099385},
+                  {mean,44099385.0},
+                  {std_dev,0.0}]
+Done on 2 cores 
+Image Merge Farm [{n,1},
+                  {min,42790818},
+                  {max,42790818},
+                  {med,42790818},
+                  {mean,42790818.0},
+                  {std_dev,0.0}]
+Done on 2 cores 
+Image Merge Farm [{n,1},
+                  {min,42684796},
+                  {max,42684796},
+                  {med,42684796},
+                  {mean,42684796.0},
+                  {std_dev,0.0}]
+Done on 2 cores 
+Image Merge Farm [{n,1},
+                  {min,43978142},
+                  {max,43978142},
+                  {med,43978142},
+                  {mean,43978142.0},
+                  {std_dev,0.0}]
+Done on 2 cores 
+Image Merge Farm [{n,1},
+                  {min,43356664},
+                  {max,43356664},
+                  {med,43356664},
+                  {mean,43356664.0},
+                  {std_dev,0.0}]
+Done on 2 cores 
+Image Merge Farm [{n,1},
+                  {min,43773509},
+                  {max,43773509},
+                  {med,43773509},
+                  {mean,43773509.0},
+                  {std_dev,0.0}]
+Done on 2 cores 
+Image Merge Farm [{n,1},
+                  {min,42619746},
+                  {max,42619746},
+                  {med,42619746},
+                  {mean,42619746.0},
+                  {std_dev,0.0}]
+Done on 2 cores 
+Image Merge Farm [{n,1},
+                  {min,42128762},
+                  {max,42128762},
+                  {med,42128762},
+                  {mean,42128762.0},
+                  {std_dev,0.0}]
+Done on 2 cores 
+Image Merge Farm [{n,1},
+                  {min,22789328},
+                  {max,22789328},
+                  {med,22789328},
+                  {mean,22789328.0},
+                  {std_dev,0.0}]
+Done on 4 cores 
+Image Merge Farm [{n,1},
+                  {min,22866895},
+                  {max,22866895},
+                  {med,22866895},
+                  {mean,22866895.0},
+                  {std_dev,0.0}]
+Done on 4 cores 
+Image Merge Farm [{n,1},
+                  {min,22955394},
+                  {max,22955394},
+                  {med,22955394},
+                  {mean,22955394.0},
+                  {std_dev,0.0}]
+Done on 4 cores 
+Image Merge Farm [{n,1},
+                  {min,23332209},
+                  {max,23332209},
+                  {med,23332209},
+                  {mean,23332209.0},
+                  {std_dev,0.0}]
+Done on 4 cores 
+Image Merge Farm [{n,1},
+                  {min,23033276},
+                  {max,23033276},
+                  {med,23033276},
+                  {mean,23033276.0},
+                  {std_dev,0.0}]
+Done on 4 cores 
+Image Merge Farm [{n,1},
+                  {min,23407669},
+                  {max,23407669},
+                  {med,23407669},
+                  {mean,23407669.0},
+                  {std_dev,0.0}]
+Done on 4 cores 
+Image Merge Farm [{n,1},
+                  {min,23150561},
+                  {max,23150561},
+                  {med,23150561},
+                  {mean,23150561.0},
+                  {std_dev,0.0}]
+Done on 4 cores 
+Image Merge Farm [{n,1},
+                  {min,24492274},
+                  {max,24492274},
+                  {med,24492274},
+                  {mean,24492274.0},
+                  {std_dev,0.0}]
+Done on 4 cores 
+Image Merge Farm [{n,1},
+                  {min,24729634},
+                  {max,24729634},
+                  {med,24729634},
+                  {mean,24729634.0},
+                  {std_dev,0.0}]
+Done on 4 cores 
+Image Merge Farm [{n,1},
+                  {min,22864444},
+                  {max,22864444},
+                  {med,22864444},
+                  {mean,22864444.0},
+                  {std_dev,0.0}]
+Done on 4 cores 
+Image Merge Farm [{n,1},
+                  {min,16505958},
+                  {max,16505958},
+                  {med,16505958},
+                  {mean,16505958.0},
+                  {std_dev,0.0}]
+Done on 6 cores 
+Image Merge Farm [{n,1},
+                  {min,16621694},
+                  {max,16621694},
+                  {med,16621694},
+                  {mean,16621694.0},
+                  {std_dev,0.0}]
+Done on 6 cores 
+Image Merge Farm [{n,1},
+                  {min,16319912},
+                  {max,16319912},
+                  {med,16319912},
+                  {mean,16319912.0},
+                  {std_dev,0.0}]
+Done on 6 cores 
+Image Merge Farm [{n,1},
+                  {min,16399707},
+                  {max,16399707},
+                  {med,16399707},
+                  {mean,16399707.0},
+                  {std_dev,0.0}]
+Done on 6 cores 
+Image Merge Farm [{n,1},
+                  {min,16927734},
+                  {max,16927734},
+                  {med,16927734},
+                  {mean,16927734.0},
+                  {std_dev,0.0}]
+Done on 6 cores 
+Image Merge Farm [{n,1},
+                  {min,16523538},
+                  {max,16523538},
+                  {med,16523538},
+                  {mean,16523538.0},
+                  {std_dev,0.0}]
+Done on 6 cores 
+Image Merge Farm [{n,1},
+                  {min,16478799},
+                  {max,16478799},
+                  {med,16478799},
+                  {mean,16478799.0},
+                  {std_dev,0.0}]
+Done on 6 cores 
+Image Merge Farm [{n,1},
+                  {min,16474367},
+                  {max,16474367},
+                  {med,16474367},
+                  {mean,16474367.0},
+                  {std_dev,0.0}]
+Done on 6 cores 
+Image Merge Farm [{n,1},
+                  {min,16629265},
+                  {max,16629265},
+                  {med,16629265},
+                  {mean,16629265.0},
+                  {std_dev,0.0}]
+Done on 6 cores 
+Image Merge Farm [{n,1},
+                  {min,16632278},
+                  {max,16632278},
+                  {med,16632278},
+                  {mean,16632278.0},
+                  {std_dev,0.0}]
+Done on 6 cores 
+Image Merge Farm [{n,1},
+                  {min,13287274},
+                  {max,13287274},
+                  {med,13287274},
+                  {mean,13287274.0},
+                  {std_dev,0.0}]
+Done on 8 cores 
+Image Merge Farm [{n,1},
+                  {min,13132404},
+                  {max,13132404},
+                  {med,13132404},
+                  {mean,13132404.0},
+                  {std_dev,0.0}]
+Done on 8 cores 
+Image Merge Farm [{n,1},
+                  {min,12917040},
+                  {max,12917040},
+                  {med,12917040},
+                  {mean,12917040.0},
+                  {std_dev,0.0}]
+Done on 8 cores 
+Image Merge Farm [{n,1},
+                  {min,13096845},
+                  {max,13096845},
+                  {med,13096845},
+                  {mean,13096845.0},
+                  {std_dev,0.0}]
+Done on 8 cores 
+Image Merge Farm [{n,1},
+                  {min,13267043},
+                  {max,13267043},
+                  {med,13267043},
+                  {mean,13267043.0},
+                  {std_dev,0.0}]
+Done on 8 cores 
+Image Merge Farm [{n,1},
+                  {min,12943458},
+                  {max,12943458},
+                  {med,12943458},
+                  {mean,12943458.0},
+                  {std_dev,0.0}]
+Done on 8 cores 
+Image Merge Farm [{n,1},
+                  {min,12971787},
+                  {max,12971787},
+                  {med,12971787},
+                  {mean,12971787.0},
+                  {std_dev,0.0}]
+Done on 8 cores 
+Image Merge Farm [{n,1},
+                  {min,13283793},
+                  {max,13283793},
+                  {med,13283793},
+                  {mean,13283793.0},
+                  {std_dev,0.0}]
+Done on 8 cores 
+Image Merge Farm [{n,1},
+                  {min,13190485},
+                  {max,13190485},
+                  {med,13190485},
+                  {mean,13190485.0},
+                  {std_dev,0.0}]
+Done on 8 cores 
+Image Merge Farm [{n,1},
+                  {min,13303267},
+                  {max,13303267},
+                  {med,13303267},
+                  {mean,13303267.0},
+                  {std_dev,0.0}]
+Done on 8 cores 
+Image Merge Farm [{n,1},
+                  {min,10801107},
+                  {max,10801107},
+                  {med,10801107},
+                  {mean,10801107.0},
+                  {std_dev,0.0}]
+Done on 10 cores 
+Image Merge Farm [{n,1},
+                  {min,10271214},
+                  {max,10271214},
+                  {med,10271214},
+                  {mean,10271214.0},
+                  {std_dev,0.0}]
+Done on 10 cores 
+Image Merge Farm [{n,1},
+                  {min,10849388},
+                  {max,10849388},
+                  {med,10849388},
+                  {mean,10849388.0},
+                  {std_dev,0.0}]
+Done on 10 cores 
+Image Merge Farm [{n,1},
+                  {min,10687231},
+                  {max,10687231},
+                  {med,10687231},
+                  {mean,10687231.0},
+                  {std_dev,0.0}]
+Done on 10 cores 
+Image Merge Farm [{n,1},
+                  {min,10643009},
+                  {max,10643009},
+                  {med,10643009},
+                  {mean,10643009.0},
+                  {std_dev,0.0}]
+Done on 10 cores 
+Image Merge Farm [{n,1},
+                  {min,10295820},
+                  {max,10295820},
+                  {med,10295820},
+                  {mean,10295820.0},
+                  {std_dev,0.0}]
+Done on 10 cores 
+Image Merge Farm [{n,1},
+                  {min,10941281},
+                  {max,10941281},
+                  {med,10941281},
+                  {mean,10941281.0},
+                  {std_dev,0.0}]
+Done on 10 cores 
+Image Merge Farm [{n,1},
+                  {min,10582551},
+                  {max,10582551},
+                  {med,10582551},
+                  {mean,10582551.0},
+                  {std_dev,0.0}]
+Done on 10 cores 
+Image Merge Farm [{n,1},
+                  {min,11087932},
+                  {max,11087932},
+                  {med,11087932},
+                  {mean,11087932.0},
+                  {std_dev,0.0}]
+Done on 10 cores 
+Image Merge Farm [{n,1},
+                  {min,11178811},
+                  {max,11178811},
+                  {med,11178811},
+                  {mean,11178811.0},
+                  {std_dev,0.0}]
+Done on 10 cores 
+Image Merge Farm [{n,1},
+                  {min,10224204},
+                  {max,10224204},
+                  {med,10224204},
+                  {mean,10224204.0},
+                  {std_dev,0.0}]
+Done on 12 cores 
+Image Merge Farm [{n,1},
+                  {min,10059530},
+                  {max,10059530},
+                  {med,10059530},
+                  {mean,10059530.0},
+                  {std_dev,0.0}]
+Done on 12 cores 
+Image Merge Farm [{n,1},
+                  {min,10306319},
+                  {max,10306319},
+                  {med,10306319},
+                  {mean,10306319.0},
+                  {std_dev,0.0}]
+Done on 12 cores 
+Image Merge Farm [{n,1},
+                  {min,9942812},
+                  {max,9942812},
+                  {med,9942812},
+                  {mean,9942812.0},
+                  {std_dev,0.0}]
+Done on 12 cores 
+Image Merge Farm [{n,1},
+                  {min,9870808},
+                  {max,9870808},
+                  {med,9870808},
+                  {mean,9870808.0},
+                  {std_dev,0.0}]
+Done on 12 cores 
+Image Merge Farm [{n,1},
+                  {min,9585948},
+                  {max,9585948},
+                  {med,9585948},
+                  {mean,9585948.0},
+                  {std_dev,0.0}]
+Done on 12 cores 
+Image Merge Farm [{n,1},
+                  {min,10427062},
+                  {max,10427062},
+                  {med,10427062},
+                  {mean,10427062.0},
+                  {std_dev,0.0}]
+Done on 12 cores 
+Image Merge Farm [{n,1},
+                  {min,9746961},
+                  {max,9746961},
+                  {med,9746961},
+                  {mean,9746961.0},
+                  {std_dev,0.0}]
+Done on 12 cores 
+Image Merge Farm [{n,1},
+                  {min,9900430},
+                  {max,9900430},
+                  {med,9900430},
+                  {mean,9900430.0},
+                  {std_dev,0.0}]
+Done on 12 cores 
+Image Merge Farm [{n,1},
+                  {min,9601160},
+                  {max,9601160},
+                  {med,9601160},
+                  {mean,9601160.0},
+                  {std_dev,0.0}]
+Done on 12 cores 
+Image Merge Farm [{n,1},
+                  {min,9137917},
+                  {max,9137917},
+                  {med,9137917},
+                  {mean,9137917.0},
+                  {std_dev,0.0}]
+Done on 14 cores 
+Image Merge Farm [{n,1},
+                  {min,9609000},
+                  {max,9609000},
+                  {med,9609000},
+                  {mean,9.609e6},
+                  {std_dev,0.0}]
+Done on 14 cores 
+Image Merge Farm [{n,1},
+                  {min,8873355},
+                  {max,8873355},
+                  {med,8873355},
+                  {mean,8873355.0},
+                  {std_dev,0.0}]
+Done on 14 cores 
+Image Merge Farm [{n,1},
+                  {min,9346216},
+                  {max,9346216},
+                  {med,9346216},
+                  {mean,9346216.0},
+                  {std_dev,0.0}]
+Done on 14 cores 
+Image Merge Farm [{n,1},
+                  {min,8955964},
+                  {max,8955964},
+                  {med,8955964},
+                  {mean,8955964.0},
+                  {std_dev,0.0}]
+Done on 14 cores 
+Image Merge Farm [{n,1},
+                  {min,8996825},
+                  {max,8996825},
+                  {med,8996825},
+                  {mean,8996825.0},
+                  {std_dev,0.0}]
+Done on 14 cores 
+Image Merge Farm [{n,1},
+                  {min,9057758},
+                  {max,9057758},
+                  {med,9057758},
+                  {mean,9057758.0},
+                  {std_dev,0.0}]
+Done on 14 cores 
+Image Merge Farm [{n,1},
+                  {min,9357903},
+                  {max,9357903},
+                  {med,9357903},
+                  {mean,9357903.0},
+                  {std_dev,0.0}]
+Done on 14 cores 
+Image Merge Farm [{n,1},
+                  {min,9550610},
+                  {max,9550610},
+                  {med,9550610},
+                  {mean,9550610.0},
+                  {std_dev,0.0}]
+Done on 14 cores 
+Image Merge Farm [{n,1},
+                  {min,9189523},
+                  {max,9189523},
+                  {med,9189523},
+                  {mean,9189523.0},
+                  {std_dev,0.0}]
+Done on 14 cores 
+Image Merge Farm [{n,1},
+                  {min,8603347},
+                  {max,8603347},
+                  {med,8603347},
+                  {mean,8603347.0},
+                  {std_dev,0.0}]
+Done on 16 cores 
+Image Merge Farm [{n,1},
+                  {min,9148392},
+                  {max,9148392},
+                  {med,9148392},
+                  {mean,9148392.0},
+                  {std_dev,0.0}]
+Done on 16 cores 
+Image Merge Farm [{n,1},
+                  {min,9215279},
+                  {max,9215279},
+                  {med,9215279},
+                  {mean,9215279.0},
+                  {std_dev,0.0}]
+Done on 16 cores 
+Image Merge Farm [{n,1},
+                  {min,9736037},
+                  {max,9736037},
+                  {med,9736037},
+                  {mean,9736037.0},
+                  {std_dev,0.0}]
+Done on 16 cores 
+Image Merge Farm [{n,1},
+                  {min,9132797},
+                  {max,9132797},
+                  {med,9132797},
+                  {mean,9132797.0},
+                  {std_dev,0.0}]
+Done on 16 cores 
+Image Merge Farm [{n,1},
+                  {min,9156004},
+                  {max,9156004},
+                  {med,9156004},
+                  {mean,9156004.0},
+                  {std_dev,0.0}]
+Done on 16 cores 
+Image Merge Farm [{n,1},
+                  {min,10110912},
+                  {max,10110912},
+                  {med,10110912},
+                  {mean,10110912.0},
+                  {std_dev,0.0}]
+Done on 16 cores 
+Image Merge Farm [{n,1},
+                  {min,8940575},
+                  {max,8940575},
+                  {med,8940575},
+                  {mean,8940575.0},
+                  {std_dev,0.0}]
+Done on 16 cores 
+Image Merge Farm [{n,1},
+                  {min,9066626},
+                  {max,9066626},
+                  {med,9066626},
+                  {mean,9066626.0},
+                  {std_dev,0.0}]
+Done on 16 cores 
+Image Merge Farm [{n,1},
+                  {min,9036880},
+                  {max,9036880},
+                  {med,9036880},
+                  {mean,9036880.0},
+                  {std_dev,0.0}]
+Done on 16 cores 
+Image Merge Farm [{n,1},
+                  {min,9846791},
+                  {max,9846791},
+                  {med,9846791},
+                  {mean,9846791.0},
+                  {std_dev,0.0}]
+Done on 18 cores 
+Image Merge Farm [{n,1},
+                  {min,9115344},
+                  {max,9115344},
+                  {med,9115344},
+                  {mean,9115344.0},
+                  {std_dev,0.0}]
+Done on 18 cores 

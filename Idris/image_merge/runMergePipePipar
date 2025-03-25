@@ -1,0 +1,8 @@
+for (( Nw1 =28; Nw1 <= 28 ; Nw1+=2)) do
+	for ((Nw2 = 28; Nw2 <= 28 ; Nw2+=2)) do
+		for ((i=0; i < 5 ; i++)); do
+		  erl -noinput -eval 'image_pipar:runPipe('"$Nw1"','"$Nw2"',100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/ ../ ./
+		done
+	done
+done
+

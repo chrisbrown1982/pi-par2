@@ -1,0 +1,42 @@
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(2,100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(4, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(6, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(8, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(10, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(12, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(14, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(16, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(18, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(20, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(22, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(24, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(26, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done
+for ((i=0; i < 5 ; i++)); do
+  erl -noinput -eval 'list_merge:runFarm(28, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ../../../../skel/ebin/
+done

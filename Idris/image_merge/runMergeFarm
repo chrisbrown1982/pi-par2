@@ -1,0 +1,42 @@
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(2,100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(4, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(6, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(8, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(10, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(12, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(14, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(16, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(18, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(20, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(22, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(24, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(26, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
+for ((i=0; i < 10 ; i++)); do
+  erl -noinput -eval 'image_pipar:runFarm(28, 100).' -s init stop  -pa erl_img2/erl_img2/erl_img/_build/default/lib/erl_img/ebin/ ~/hlpp2024//skel/ebin/ ../ ./
+done
