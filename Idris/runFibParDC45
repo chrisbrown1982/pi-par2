@@ -1,0 +1,42 @@
+for ((i=0 ; i < 10 ; i++)); do
+	erl -noinput -eval 'fib:runFibDC(2, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(4, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(6, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(8, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(10, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(12, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(14, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(16, 35 , 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(18, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(20, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(22, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(24, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(26, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'fib:runFibDC(28, 35, 45).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
