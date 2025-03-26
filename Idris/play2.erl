@@ -44,7 +44,7 @@ process_function_stream(Fun, Sus) ->
 
 % process : (f : [a] -> [b]) -> Process [a] [b]
 process(F) ->
-    Sus = spawn(play2, drain_stream, [[]]),
+    Sus = spawn(play2, drain_stream, []),
     Pid = spawn(play2, process_function_stream, [F, Sus]) ,
     {Pid, Sus}.
 
@@ -131,4 +131,19 @@ nest (F1, Nw1, F2, Nw2, Inputs) ->
 
     sync_stream2(SusF2, length(Inputs)).
 
-    
+
+parMap(F, []) -> [];
+parMap(F, [X|Xs]) -> 
+    [ app_stream(process(F), X) | parMap(F, Xs)].
+
+fib(0) -> 0;
+fib(1) -> 1;
+fib(N) -> fib(N-1) + fib(N-2).
+
+fibDC([0, T]) -> 0;
+fibDC([1, T]) -> 1;
+fibDC([N, T]) when N < T -> fib(N);
+fibDC([N, T]) when N >= T -> 
+    S1 = app_stream(process(fun fibDC/1), [N-1, T]),
+    S2 = app_stream(process(fun fibDC/1), [N-2, T]),
+    sync_stream(S1) + sync_stream(S2). 
