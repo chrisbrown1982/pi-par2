@@ -87,7 +87,7 @@ mergePipe (NW1, NW2, X) ->
 	play2:nest(fun(I) -> list_merge:readImage(I) end, NW1, fun(I) -> list_merge:convertMerge(I) end, NW2, Images).
 
 runPipe(Nw1, Nw2, X) ->
-   	io:format("Image Merge Pipe on ~p ~p ~p ~n", [Nw1, Nw2, sk_profile:benchmark(fun ?MODULE:mergePipeFarm/3, [Nw1, Nw2, X], 1)]),
+   	io:format("Image Merge Pipe on ~p ~p ~p ~n", [Nw1, Nw2, sk_profile:benchmark(fun ?MODULE:mergePipe/3, [Nw1, Nw2, X], 1)]),
 	io:format("Done on ~p and ~p cores ~n." , [Nw1, Nw2]).
 
 
