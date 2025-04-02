@@ -1,0 +1,1120 @@
+sumEuler DC [{n,1},
+             {min,5200189},
+             {max,5200189},
+             {med,5200189},
+             {mean,5200189.0},
+             {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+sumEuler DC [{n,1},
+             {min,5126730},
+             {max,5126730},
+             {med,5126730},
+             {mean,5126730.0},
+             {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+sumEuler DC [{n,1},
+             {min,5216300},
+             {max,5216300},
+             {med,5216300},
+             {mean,5.2163e6},
+             {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+sumEuler DC [{n,1},
+             {min,5120109},
+             {max,5120109},
+             {med,5120109},
+             {mean,5120109.0},
+             {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+sumEuler DC [{n,1},
+             {min,5239117},
+             {max,5239117},
+             {med,5239117},
+             {mean,5239117.0},
+             {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+sumEuler DC [{n,1},
+             {min,5146032},
+             {max,5146032},
+             {med,5146032},
+             {mean,5146032.0},
+             {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+sumEuler DC [{n,1},
+             {min,5168164},
+             {max,5168164},
+             {med,5168164},
+             {mean,5168164.0},
+             {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+sumEuler DC [{n,1},
+             {min,5133354},
+             {max,5133354},
+             {med,5133354},
+             {mean,5133354.0},
+             {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+sumEuler DC [{n,1},
+             {min,5223492},
+             {max,5223492},
+             {med,5223492},
+             {mean,5223492.0},
+             {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+sumEuler DC [{n,1},
+             {min,5095600},
+             {max,5095600},
+             {med,5095600},
+             {mean,5.0956e6},
+             {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2687605},
+             {max,2687605},
+             {med,2687605},
+             {mean,2687605.0},
+             {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2835429},
+             {max,2835429},
+             {med,2835429},
+             {mean,2835429.0},
+             {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2885945},
+             {max,2885945},
+             {med,2885945},
+             {mean,2885945.0},
+             {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2949219},
+             {max,2949219},
+             {med,2949219},
+             {mean,2949219.0},
+             {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2828660},
+             {max,2828660},
+             {med,2828660},
+             {mean,2828660.0},
+             {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2809762},
+             {max,2809762},
+             {med,2809762},
+             {mean,2809762.0},
+             {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2856528},
+             {max,2856528},
+             {med,2856528},
+             {mean,2856528.0},
+             {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2812045},
+             {max,2812045},
+             {med,2812045},
+             {mean,2812045.0},
+             {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2802460},
+             {max,2802460},
+             {med,2802460},
+             {mean,2802460.0},
+             {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2760089},
+             {max,2760089},
+             {med,2760089},
+             {mean,2760089.0},
+             {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+sumEuler DC [{n,1},
+             {min,2001008},
+             {max,2001008},
+             {med,2001008},
+             {mean,2001008.0},
+             {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1881285},
+             {max,1881285},
+             {med,1881285},
+             {mean,1881285.0},
+             {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1895651},
+             {max,1895651},
+             {med,1895651},
+             {mean,1895651.0},
+             {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1897512},
+             {max,1897512},
+             {med,1897512},
+             {mean,1897512.0},
+             {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1906675},
+             {max,1906675},
+             {med,1906675},
+             {mean,1906675.0},
+             {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1896356},
+             {max,1896356},
+             {med,1896356},
+             {mean,1896356.0},
+             {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1899563},
+             {max,1899563},
+             {med,1899563},
+             {mean,1899563.0},
+             {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1894965},
+             {max,1894965},
+             {med,1894965},
+             {mean,1894965.0},
+             {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1891245},
+             {max,1891245},
+             {med,1891245},
+             {mean,1891245.0},
+             {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1946064},
+             {max,1946064},
+             {med,1946064},
+             {mean,1946064.0},
+             {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1453549},
+             {max,1453549},
+             {med,1453549},
+             {mean,1453549.0},
+             {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1437305},
+             {max,1437305},
+             {med,1437305},
+             {mean,1437305.0},
+             {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1458105},
+             {max,1458105},
+             {med,1458105},
+             {mean,1458105.0},
+             {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1491926},
+             {max,1491926},
+             {med,1491926},
+             {mean,1491926.0},
+             {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1456364},
+             {max,1456364},
+             {med,1456364},
+             {mean,1456364.0},
+             {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1471375},
+             {max,1471375},
+             {med,1471375},
+             {mean,1471375.0},
+             {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1467039},
+             {max,1467039},
+             {med,1467039},
+             {mean,1467039.0},
+             {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1427282},
+             {max,1427282},
+             {med,1427282},
+             {mean,1427282.0},
+             {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1494375},
+             {max,1494375},
+             {med,1494375},
+             {mean,1494375.0},
+             {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1446891},
+             {max,1446891},
+             {med,1446891},
+             {mean,1446891.0},
+             {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1173355},
+             {max,1173355},
+             {med,1173355},
+             {mean,1173355.0},
+             {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1184295},
+             {max,1184295},
+             {med,1184295},
+             {mean,1184295.0},
+             {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1227567},
+             {max,1227567},
+             {med,1227567},
+             {mean,1227567.0},
+             {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1168180},
+             {max,1168180},
+             {med,1168180},
+             {mean,1168180.0},
+             {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1188130},
+             {max,1188130},
+             {med,1188130},
+             {mean,1188130.0},
+             {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1159286},
+             {max,1159286},
+             {med,1159286},
+             {mean,1159286.0},
+             {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1180127},
+             {max,1180127},
+             {med,1180127},
+             {mean,1180127.0},
+             {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1161125},
+             {max,1161125},
+             {med,1161125},
+             {mean,1161125.0},
+             {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1182214},
+             {max,1182214},
+             {med,1182214},
+             {mean,1182214.0},
+             {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1180557},
+             {max,1180557},
+             {med,1180557},
+             {mean,1180557.0},
+             {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1001060},
+             {max,1001060},
+             {med,1001060},
+             {mean,1001060.0},
+             {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+sumEuler DC [{n,1},
+             {min,990378},
+             {max,990378},
+             {med,990378},
+             {mean,990378.0},
+             {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1035071},
+             {max,1035071},
+             {med,1035071},
+             {mean,1035071.0},
+             {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1016447},
+             {max,1016447},
+             {med,1016447},
+             {mean,1016447.0},
+             {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1018482},
+             {max,1018482},
+             {med,1018482},
+             {mean,1018482.0},
+             {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1029005},
+             {max,1029005},
+             {med,1029005},
+             {mean,1029005.0},
+             {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1028381},
+             {max,1028381},
+             {med,1028381},
+             {mean,1028381.0},
+             {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+sumEuler DC [{n,1},
+             {min,989570},
+             {max,989570},
+             {med,989570},
+             {mean,989570.0},
+             {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+sumEuler DC [{n,1},
+             {min,992251},
+             {max,992251},
+             {med,992251},
+             {mean,992251.0},
+             {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+sumEuler DC [{n,1},
+             {min,1024009},
+             {max,1024009},
+             {med,1024009},
+             {mean,1024009.0},
+             {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+sumEuler DC [{n,1},
+             {min,934813},
+             {max,934813},
+             {med,934813},
+             {mean,934813.0},
+             {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+sumEuler DC [{n,1},
+             {min,916190},
+             {max,916190},
+             {med,916190},
+             {mean,916190.0},
+             {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+sumEuler DC [{n,1},
+             {min,869311},
+             {max,869311},
+             {med,869311},
+             {mean,869311.0},
+             {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+sumEuler DC [{n,1},
+             {min,835924},
+             {max,835924},
+             {med,835924},
+             {mean,835924.0},
+             {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+sumEuler DC [{n,1},
+             {min,881778},
+             {max,881778},
+             {med,881778},
+             {mean,881778.0},
+             {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+sumEuler DC [{n,1},
+             {min,903834},
+             {max,903834},
+             {med,903834},
+             {mean,903834.0},
+             {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+sumEuler DC [{n,1},
+             {min,874573},
+             {max,874573},
+             {med,874573},
+             {mean,874573.0},
+             {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+sumEuler DC [{n,1},
+             {min,899505},
+             {max,899505},
+             {med,899505},
+             {mean,899505.0},
+             {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+sumEuler DC [{n,1},
+             {min,851457},
+             {max,851457},
+             {med,851457},
+             {mean,851457.0},
+             {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+sumEuler DC [{n,1},
+             {min,889934},
+             {max,889934},
+             {med,889934},
+             {mean,889934.0},
+             {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+sumEuler DC [{n,1},
+             {min,820731},
+             {max,820731},
+             {med,820731},
+             {mean,820731.0},
+             {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+sumEuler DC [{n,1},
+             {min,768441},
+             {max,768441},
+             {med,768441},
+             {mean,768441.0},
+             {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+sumEuler DC [{n,1},
+             {min,792224},
+             {max,792224},
+             {med,792224},
+             {mean,792224.0},
+             {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+sumEuler DC [{n,1},
+             {min,804365},
+             {max,804365},
+             {med,804365},
+             {mean,804365.0},
+             {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+sumEuler DC [{n,1},
+             {min,787806},
+             {max,787806},
+             {med,787806},
+             {mean,787806.0},
+             {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+sumEuler DC [{n,1},
+             {min,772696},
+             {max,772696},
+             {med,772696},
+             {mean,772696.0},
+             {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+sumEuler DC [{n,1},
+             {min,777090},
+             {max,777090},
+             {med,777090},
+             {mean,777090.0},
+             {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+sumEuler DC [{n,1},
+             {min,789931},
+             {max,789931},
+             {med,789931},
+             {mean,789931.0},
+             {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+sumEuler DC [{n,1},
+             {min,761960},
+             {max,761960},
+             {med,761960},
+             {mean,761960.0},
+             {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+sumEuler DC [{n,1},
+             {min,787116},
+             {max,787116},
+             {med,787116},
+             {mean,787116.0},
+             {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+sumEuler DC [{n,1},
+             {min,729109},
+             {max,729109},
+             {med,729109},
+             {mean,729109.0},
+             {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+sumEuler DC [{n,1},
+             {min,740195},
+             {max,740195},
+             {med,740195},
+             {mean,740195.0},
+             {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+sumEuler DC [{n,1},
+             {min,720314},
+             {max,720314},
+             {med,720314},
+             {mean,720314.0},
+             {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+sumEuler DC [{n,1},
+             {min,721450},
+             {max,721450},
+             {med,721450},
+             {mean,721450.0},
+             {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+sumEuler DC [{n,1},
+             {min,816213},
+             {max,816213},
+             {med,816213},
+             {mean,816213.0},
+             {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+sumEuler DC [{n,1},
+             {min,727675},
+             {max,727675},
+             {med,727675},
+             {mean,727675.0},
+             {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+sumEuler DC [{n,1},
+             {min,707480},
+             {max,707480},
+             {med,707480},
+             {mean,707480.0},
+             {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+sumEuler DC [{n,1},
+             {min,773493},
+             {max,773493},
+             {med,773493},
+             {mean,773493.0},
+             {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+sumEuler DC [{n,1},
+             {min,706062},
+             {max,706062},
+             {med,706062},
+             {mean,706062.0},
+             {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+sumEuler DC [{n,1},
+             {min,736866},
+             {max,736866},
+             {med,736866},
+             {mean,736866.0},
+             {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+sumEuler DC [{n,1},
+             {min,686766},
+             {max,686766},
+             {med,686766},
+             {mean,686766.0},
+             {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+sumEuler DC [{n,1},
+             {min,704179},
+             {max,704179},
+             {med,704179},
+             {mean,704179.0},
+             {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+sumEuler DC [{n,1},
+             {min,677937},
+             {max,677937},
+             {med,677937},
+             {mean,677937.0},
+             {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+sumEuler DC [{n,1},
+             {min,689180},
+             {max,689180},
+             {med,689180},
+             {mean,689180.0},
+             {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+sumEuler DC [{n,1},
+             {min,666295},
+             {max,666295},
+             {med,666295},
+             {mean,666295.0},
+             {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+sumEuler DC [{n,1},
+             {min,655803},
+             {max,655803},
+             {med,655803},
+             {mean,655803.0},
+             {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+sumEuler DC [{n,1},
+             {min,656557},
+             {max,656557},
+             {med,656557},
+             {mean,656557.0},
+             {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+sumEuler DC [{n,1},
+             {min,669100},
+             {max,669100},
+             {med,669100},
+             {mean,6.691e5},
+             {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+sumEuler DC [{n,1},
+             {min,644582},
+             {max,644582},
+             {med,644582},
+             {mean,644582.0},
+             {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+sumEuler DC [{n,1},
+             {min,675616},
+             {max,675616},
+             {med,675616},
+             {mean,675616.0},
+             {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+sumEuler DC [{n,1},
+             {min,622400},
+             {max,622400},
+             {med,622400},
+             {mean,6.224e5},
+             {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+sumEuler DC [{n,1},
+             {min,660142},
+             {max,660142},
+             {med,660142},
+             {mean,660142.0},
+             {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+sumEuler DC [{n,1},
+             {min,634463},
+             {max,634463},
+             {med,634463},
+             {mean,634463.0},
+             {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+sumEuler DC [{n,1},
+             {min,640277},
+             {max,640277},
+             {med,640277},
+             {mean,640277.0},
+             {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+sumEuler DC [{n,1},
+             {min,658388},
+             {max,658388},
+             {med,658388},
+             {mean,658388.0},
+             {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+sumEuler DC [{n,1},
+             {min,656072},
+             {max,656072},
+             {med,656072},
+             {mean,656072.0},
+             {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+sumEuler DC [{n,1},
+             {min,652771},
+             {max,652771},
+             {med,652771},
+             {mean,652771.0},
+             {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+sumEuler DC [{n,1},
+             {min,616496},
+             {max,616496},
+             {med,616496},
+             {mean,616496.0},
+             {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+sumEuler DC [{n,1},
+             {min,624538},
+             {max,624538},
+             {med,624538},
+             {mean,624538.0},
+             {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+sumEuler DC [{n,1},
+             {min,638114},
+             {max,638114},
+             {med,638114},
+             {mean,638114.0},
+             {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+sumEuler DC [{n,1},
+             {min,599778},
+             {max,599778},
+             {med,599778},
+             {mean,599778.0},
+             {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+sumEuler DC [{n,1},
+             {min,591928},
+             {max,591928},
+             {med,591928},
+             {mean,591928.0},
+             {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+sumEuler DC [{n,1},
+             {min,596249},
+             {max,596249},
+             {med,596249},
+             {mean,596249.0},
+             {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+sumEuler DC [{n,1},
+             {min,581556},
+             {max,581556},
+             {med,581556},
+             {mean,581556.0},
+             {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+sumEuler DC [{n,1},
+             {min,593808},
+             {max,593808},
+             {med,593808},
+             {mean,593808.0},
+             {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+sumEuler DC [{n,1},
+             {min,601409},
+             {max,601409},
+             {med,601409},
+             {mean,601409.0},
+             {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+sumEuler DC [{n,1},
+             {min,597648},
+             {max,597648},
+             {med,597648},
+             {mean,597648.0},
+             {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+sumEuler DC [{n,1},
+             {min,590983},
+             {max,590983},
+             {med,590983},
+             {mean,590983.0},
+             {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+sumEuler DC [{n,1},
+             {min,592143},
+             {max,592143},
+             {med,592143},
+             {mean,592143.0},
+             {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+sumEuler DC [{n,1},
+             {min,619655},
+             {max,619655},
+             {med,619655},
+             {mean,619655.0},
+             {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+sumEuler DC [{n,1},
+             {min,590398},
+             {max,590398},
+             {med,590398},
+             {mean,590398.0},
+             {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+sumEuler DC [{n,1},
+             {min,591630},
+             {max,591630},
+             {med,591630},
+             {mean,591630.0},
+             {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+sumEuler DC [{n,1},
+             {min,605015},
+             {max,605015},
+             {med,605015},
+             {mean,605015.0},
+             {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+sumEuler DC [{n,1},
+             {min,562626},
+             {max,562626},
+             {med,562626},
+             {mean,562626.0},
+             {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+sumEuler DC [{n,1},
+             {min,567526},
+             {max,567526},
+             {med,567526},
+             {mean,567526.0},
+             {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+sumEuler DC [{n,1},
+             {min,572290},
+             {max,572290},
+             {med,572290},
+             {mean,572290.0},
+             {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+sumEuler DC [{n,1},
+             {min,590433},
+             {max,590433},
+             {med,590433},
+             {mean,590433.0},
+             {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+sumEuler DC [{n,1},
+             {min,593816},
+             {max,593816},
+             {med,593816},
+             {mean,593816.0},
+             {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+sumEuler DC [{n,1},
+             {min,573853},
+             {max,573853},
+             {med,573853},
+             {mean,573853.0},
+             {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+sumEuler DC [{n,1},
+             {min,583185},
+             {max,583185},
+             {med,583185},
+             {mean,583185.0},
+             {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+sumEuler DC [{n,1},
+             {min,542223},
+             {max,542223},
+             {med,542223},
+             {mean,542223.0},
+             {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+sumEuler DC [{n,1},
+             {min,554409},
+             {max,554409},
+             {med,554409},
+             {mean,554409.0},
+             {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+sumEuler DC [{n,1},
+             {min,546370},
+             {max,546370},
+             {med,546370},
+             {mean,546370.0},
+             {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+sumEuler DC [{n,1},
+             {min,557296},
+             {max,557296},
+             {med,557296},
+             {mean,557296.0},
+             {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+sumEuler DC [{n,1},
+             {min,588110},
+             {max,588110},
+             {med,588110},
+             {mean,588110.0},
+             {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+sumEuler DC [{n,1},
+             {min,565703},
+             {max,565703},
+             {med,565703},
+             {mean,565703.0},
+             {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+sumEuler DC [{n,1},
+             {min,573318},
+             {max,573318},
+             {med,573318},
+             {mean,573318.0},
+             {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+sumEuler DC [{n,1},
+             {min,546222},
+             {max,546222},
+             {med,546222},
+             {mean,546222.0},
+             {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+sumEuler DC [{n,1},
+             {min,535932},
+             {max,535932},
+             {med,535932},
+             {mean,535932.0},
+             {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+sumEuler DC [{n,1},
+             {min,589922},
+             {max,589922},
+             {med,589922},
+             {mean,589922.0},
+             {std_dev,0.0}]
+Done with examples on 28 cores.
+--------

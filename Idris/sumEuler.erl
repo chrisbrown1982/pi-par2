@@ -36,3 +36,12 @@ sumEulerDC(Xs) ->
 run_seq(X) ->
 	  io:format("SumEuler Seq: ~p~n", [sk_profile:benchmark(fun ?MODULE:sumEuler/1, [X], 1)]),
 	  io:format("Done with seq. ~n").
+
+run_seq_dc(X) ->
+          io:format("SumEuler Seq: ~p~n", [sk_profile:benchmark(fun ?MODULE:sumEulerDC/1, [mkList(X)], 1)]),
+          io:format("Done with seq. ~n").
+
+run_examples(Nw, Size, T) ->
+   erlang:system_flag(schedulers_online, Nw),
+   io:format("sumEuler DC ~p~n", [sk_profile:benchmark(fun ?MODULE:sumEulerDCP/1, [{T, mkList(Size)}], 1)]),
+   io:format("Done with examples on ~p cores.~n--------~n", [Nw]).

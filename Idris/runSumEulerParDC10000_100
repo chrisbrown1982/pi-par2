@@ -1,0 +1,42 @@
+for ((i=0 ; i < 10 ; i++)); do
+	erl -noinput -eval 'sumEuler:run_examples(2, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(4, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(6, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(8, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(10, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(12, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(14, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(16, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(18, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(20, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(22, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(24, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(26, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(28, 10000, 100).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
