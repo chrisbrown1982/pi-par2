@@ -1,0 +1,70 @@
+SumEuler Seq: [{n,1},
+               {min,174471643},
+               {max,174471643},
+               {med,174471643},
+               {mean,174471643.0},
+               {std_dev,0.0}]
+Done with seq. 
+SumEuler Seq: [{n,1},
+               {min,173860658},
+               {max,173860658},
+               {med,173860658},
+               {mean,173860658.0},
+               {std_dev,0.0}]
+Done with seq. 
+SumEuler Seq: [{n,1},
+               {min,175129311},
+               {max,175129311},
+               {med,175129311},
+               {mean,175129311.0},
+               {std_dev,0.0}]
+Done with seq. 
+SumEuler Seq: [{n,1},
+               {min,174471868},
+               {max,174471868},
+               {med,174471868},
+               {mean,174471868.0},
+               {std_dev,0.0}]
+Done with seq. 
+SumEuler Seq: [{n,1},
+               {min,174548835},
+               {max,174548835},
+               {med,174548835},
+               {mean,174548835.0},
+               {std_dev,0.0}]
+Done with seq. 
+SumEuler Seq: [{n,1},
+               {min,174476588},
+               {max,174476588},
+               {med,174476588},
+               {mean,174476588.0},
+               {std_dev,0.0}]
+Done with seq. 
+SumEuler Seq: [{n,1},
+               {min,174023701},
+               {max,174023701},
+               {med,174023701},
+               {mean,174023701.0},
+               {std_dev,0.0}]
+Done with seq. 
+SumEuler Seq: [{n,1},
+               {min,174447656},
+               {max,174447656},
+               {med,174447656},
+               {mean,174447656.0},
+               {std_dev,0.0}]
+Done with seq. 
+SumEuler Seq: [{n,1},
+               {min,174237396},
+               {max,174237396},
+               {med,174237396},
+               {mean,174237396.0},
+               {std_dev,0.0}]
+Done with seq. 
+SumEuler Seq: [{n,1},
+               {min,174945604},
+               {max,174945604},
+               {med,174945604},
+               {mean,174945604.0},
+               {std_dev,0.0}]
+Done with seq. 
