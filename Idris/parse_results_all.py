@@ -55,5 +55,8 @@ par_avgs = get_par(sys.argv[2])
 core = 2;
 print("base ,", seq_avg)
 for avg in par_avgs:
-    print(core, " , " , avg, ",", seq_avg/avg)
-    core = core + 2;
+    if core > 28:
+        core = 2
+    # print(core, " , " , avg, ",", seq_avg/avg)
+    print(core, " \t ", seq_avg/avg)
+    core = core + 2
