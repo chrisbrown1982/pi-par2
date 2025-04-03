@@ -1,0 +1,42 @@
+for ((i=0 ; i < 10 ; i++)); do
+	erl -noinput -eval 'sumEuler:run_examples(2, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(4, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(6, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(8, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(10, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(12, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(14, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(16, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(18, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(20, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(22, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(24, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(26, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
+for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval 'sumEuler:run_examples(28, 20000, 1).' -s init stop -pa ~/hlpp2024/skel/ebin/ ./
+done
