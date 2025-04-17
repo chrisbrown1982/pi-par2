@@ -2,21 +2,12 @@
 -compile(export_all).
 
 
-fibDC([0, T]) -> 0;
-fibDC([1, T]) -> 1;
-fibDC([N, T]) when N < T -> fib(N);
-fibDC([N, T]) when N >= T ->
-    S1 = play2:app_stream(play2:process(fun fibDC/1), [N-1, T]),
-    S2 = play2:app_stream(play2:process(fun fibDC/1), [N-2, T]),
-    play2:sync_stream(S1) + play2:sync_stream(S2).
-
-
 sortMerge([], Ylist) -> Ylist;
 sortMerge(XList, []) -> XList;
-sortMerge([X|Xs], [Y|Ys]) when X <= Y ->
+sortMerge([X|Xs], [Y|Ys]) when X =< Y ->
 	[X | sortMerge(Xs, [Y|Ys])];
 sortMerge([X|Xs], [Y|Ys]) when X >= Y ->
-	[Y | sortMerge([X|Xs], Ys]). 
+	[Y | sortMerge([X|Xs], Ys)]. 
 
 
 split([], SoFar) -> SoFar;
@@ -30,13 +21,16 @@ mergeSort(Xs) ->
 	{Th, Bh} = split(Xs, {[],[]}),
 	sortMerge(mergeSort(Th),mergeSort(Bh)).
 
-mergeSortPar([]) -> [];
-mergeSortPar([X]) -> [X];
-mergeSortPar(Xs) ->
+mergeSortPar2({T, []}) -> [];
+mergeSortPar2({T, [X]}) -> [X];
+mergeSortPar2({T, Xs}) when length(Xs) < T -> mergeSort(Xs);
+mergeSortPar2({T, Xs})  ->
         {Th, Bh} = split(Xs, {[],[]}),
-	S1 = play2:app_stream(play2:process(fun mergeSortPar/1), [Th]),
-	S2 = play2:app_stream(play2:process(fun mergeSortPar/1), [Bh]),
+	S1 = play2:app_stream(play2:process(fun mergeSortPar2/1), {T, Th}),
+	S2 = play2:app_stream(play2:process(fun mergeSortPar2/1), {T, Bh}),
 	sortMerge(play2:sync_stream(S1), play2:sync_stream(S2)).
+
+mergeSortPar({T, Xs}) -> mergeSortPar2({length(Xs),T,Xs}). 
 
 
 generate_random_int_list(N,StartVal,Lim) ->
