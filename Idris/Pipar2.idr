@@ -121,6 +121,14 @@ data Stages : (n : Nat) -> (a : Type) -> (b : Type) -> Type where
           -> (ss : Stages n a b)
           -> Stages (S n) a c
 
+data Stages2 : (n : Nat) -> (a : Type) -> (b : Type) -> Type where
+  MkStagesNil : Stages Z a b  
+  MkStages : (b : Type)
+          -> (c : Type)
+          -> (s1 : Proc (b -> c) O)
+          -> (ss : Stages n a b)
+          -> Stages (S n) a c
+
 spawnStages : Stages n a z -> Vect n (t : Type ** (y : Type ** (Proc (t->y) O)))
 spawnStages (MkStagesNil) = []
 spawnStages (MkStages a b f ss) =
@@ -128,14 +136,12 @@ spawnStages (MkStages a b f ss) =
     in (a ** b ** proc f) :: r
 
 
-pipeS : (stages : Stages n a z)
+pipeS : (stages : Stages2 n a z)
      -> (input : Vect m a)
      -> Maybe (Proc (a -> z) (Su m))
 -- pipeS MkStagesNil input = ?hole2
 pipeS stages input =
-    case spawnStages stages of 
-        []      => Nothing 
-        (f::fs) => let r = foldr (\(a ** b ** s1), (b ** c ** s2) => (a ** c ** s1 >> s2 )) f fs in ?h
+    let r = foldr (\(a ** b ** s1), (b ** c ** s2) => (a ** c ** s1 >> s2 )) f fs in ?h
     
 {-
 pipeS : (fs : Vect (S n) (t : Type ** Proc t O)) -- list of stages
