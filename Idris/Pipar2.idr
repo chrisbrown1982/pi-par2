@@ -148,9 +148,33 @@ pipeS MkStagesNil input = Nothing
 pipeS (MkStages s1 ss) input = 
     let fs = foldStages (MkStages s1 ss) in Just (fs <##> input)
 
-pipe : (stages : Stages n a b z)
-    -> (input : Vect (S m) a)
-    -> Maybe (Vect (S m) z)
-pipe fs xs = case pipeS fs xs of
-                Nothing => Nothing
-                Just fs' => Just ((<$$$>) fs')
+dc :   (split : a -> Vect n a)
+   ->  (join : Vect n b -> b)
+   ->  (thres : a -> Bool)
+   ->  (solve : a -> b)
+   ->  (input : a )
+   ->  b
+dc split join thre solve input with (thre input)
+    dc split join thre solve input | True = solve input 
+    dc split join thre solve input | False =
+        let xs = split input
+            re = procN (dc split join thre solve) (length xs) 
+            reA = re <###> xs
+        in ?h2
+
+{-
+dc :   (split : a -> Vect n a)
+   ->  (join : Vect n b -> b)
+   ->  (thres : a -> Bool)
+   ->  (solve : a -> b)
+   ->  (input : a )
+   ->  b
+dc split join thre solve input with (thre input)
+    | True  = solve input
+    | False = 
+        let xs = split input 
+            re = procN (dc joint thre solve) (length xs)
+            reA = re <###> xs
+            syn = <$$> reA 
+        in join syn  
+-}
