@@ -53,6 +53,12 @@ infixr 4 <$$>
 public export
 (<$$>) : Vect n (Proc b (Su m)) -> Vect (m*n) b -- derived
 
+
+infixr 4 <$$>
+public export
+(<$$$>) : (Proc b (Su (S k))) -> Vect (S k) b -- derived
+
+
 -- composition
 
 infixr 4 <>>>
@@ -113,6 +119,7 @@ farmS' {m} {b} f nw xs prf =
       r    = p <##> ysA'
   in r
 
+{-
 data Stages : (n : Nat) -> (a : Type) -> (b : Type) -> Type where
   MkStagesNil : Stages Z a b  
   MkStages : (b : Type)
@@ -120,34 +127,30 @@ data Stages : (n : Nat) -> (a : Type) -> (b : Type) -> Type where
           -> (s1 : b -> c) 
           -> (ss : Stages n a b)
           -> Stages (S n) a c
-
-data Stages2 : (n : Nat) -> (a : Type) -> (b : Type) -> Type where
-  MkStagesNil : Stages Z a b  
-  MkStages : (b : Type)
-          -> (c : Type)
-          -> (s1 : Proc (b -> c) O)
-          -> (ss : Stages n a b)
-          -> Stages (S n) a c
-
-spawnStages : Stages n a z -> Vect n (t : Type ** (y : Type ** (Proc (t->y) O)))
-spawnStages (MkStagesNil) = []
-spawnStages (MkStages a b f ss) =
-    let r = spawnStages ss
-    in (a ** b ** proc f) :: r
-
-
-pipeS : (stages : Stages2 n a z)
-     -> (input : Vect m a)
-     -> Maybe (Proc (a -> z) (Su m))
--- pipeS MkStagesNil input = ?hole2
-pipeS stages input =
-    let r = foldr (\(a ** b ** s1), (b ** c ** s2) => (a ** c ** s1 >> s2 )) f fs in ?h
-    
-{-
-pipeS : (fs : Vect (S n) (t : Type ** Proc t O)) -- list of stages
-    -> (ok : Stages fs a z) -- prf of compatibility; a->z where a -> ... -> z
-    -> (xs : Vect m a)
-    -> Proc (a -> z) (Su m)
-pipeS (f :: fs) ok xs = (foldr (>>) f fs) <##> xs -- >> is associative
-
 -}
+
+data Stages : (n : Nat) -> (a : Type) -> (b : Type) -> (c : Type) -> Type where
+  MkStagesNil : Stages Z a a a  
+  MkStages : (s1 : Proc (b -> c) O)
+          -> (ss : Stages n a d b)
+          -> Stages (S n) a b c
+
+foldStages : (ss : Stages (S n) a b d) -> Proc (a -> d) O
+foldStages (MkStages s2 MkStagesNil) = s2
+foldStages (MkStages s2 (MkStages s3 ss2)) =  
+    case foldStages (MkStages s3 ss2) of 
+        p2 => p2 >> s2
+ 
+pipeS : (stages : Stages n a b z)
+     -> (input : Vect m a)
+     -> Maybe (Proc z (Su m))
+pipeS MkStagesNil input = Nothing
+pipeS (MkStages s1 ss) input = 
+    let fs = foldStages (MkStages s1 ss) in Just (fs <##> input)
+
+pipe : (stages : Stages n a b z)
+    -> (input : Vect (S m) a)
+    -> Maybe (Vect (S m) z)
+pipe fs xs = case pipeS fs xs of
+                Nothing => Nothing
+                Just fs' => Just ((<$$$>) fs')
