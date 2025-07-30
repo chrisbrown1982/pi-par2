@@ -38,6 +38,14 @@ public export
        -> Vect n (Vect m a) 
        -> Vect n (Proc b (Su m))
 
+
+infixr 4 <####>
+public export
+(<####>) : Vect n (Proc (a -> b) O) 
+       -> Vect n a 
+       -> Vect n (Proc b (Su 1))
+
+
 -- auxilary chunk
 public export
 chunk : (Vect n a) -> (n : Nat) -> (m : Nat) 
@@ -148,8 +156,12 @@ pipeS MkStagesNil input = Nothing
 pipeS (MkStages s1 ss) input = 
     let fs = foldStages (MkStages s1 ss) in Just (fs <##> input)
 
-dc :   (split : a -> Vect n a)
-   ->  (join : Vect n b -> b)
+vectLem1 : (n : Nat) -> Vect (plus n (mult 0 n)) b -> Vect n b 
+vectLem1 Z [] = []
+vectLem1 (S n) (x::xs) = let hyp = vectLem1 n xs in x::hyp
+
+dc :   (split : a -> (n ** Vect n a))
+   ->  (join : {n : Nat} -> Vect n b -> b)
    ->  (thres : a -> Bool)
    ->  (solve : a -> b)
    ->  (input : a )
@@ -157,24 +169,8 @@ dc :   (split : a -> Vect n a)
 dc split join thre solve input with (thre input)
     dc split join thre solve input | True = solve input 
     dc split join thre solve input | False =
-        let xs = split input
-            re = procN (dc split join thre solve) (length xs) 
-            reA = re <###> xs
-        in ?h2
-
-{-
-dc :   (split : a -> Vect n a)
-   ->  (join : Vect n b -> b)
-   ->  (thres : a -> Bool)
-   ->  (solve : a -> b)
-   ->  (input : a )
-   ->  b
-dc split join thre solve input with (thre input)
-    | True  = solve input
-    | False = 
-        let xs = split input 
-            re = procN (dc joint thre solve) (length xs)
-            reA = re <###> xs
-            syn = <$$> reA 
-        in join syn  
--}
+        let (n ** xs) = split input
+            re = procN (dc split join thre solve) n
+            reA = re <####> xs
+            syn = vectLem1 n ((<$$>) reA)
+        in join {n} syn
