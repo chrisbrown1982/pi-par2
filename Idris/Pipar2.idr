@@ -127,15 +127,6 @@ farmS' {m} {b} f nw xs prf =
       r    = p <##> ysA'
   in r
 
-{-
-data Stages : (n : Nat) -> (a : Type) -> (b : Type) -> Type where
-  MkStagesNil : Stages Z a b  
-  MkStages : (b : Type)
-          -> (c : Type)
-          -> (s1 : b -> c) 
-          -> (ss : Stages n a b)
-          -> Stages (S n) a c
--}
 
 data Stages : (n : Nat) -> (a : Type) -> (b : Type) -> (c : Type) -> Type where
   MkStagesNil : Stages Z a a a  
