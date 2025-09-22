@@ -38,7 +38,6 @@ public export
        -> Vect n (Vect m a) 
        -> Vect n (Proc b (Su m))
 
-
 infixr 4 <####>
 public export
 (<####>) : Vect n (Proc (a -> b) O) 
@@ -48,7 +47,7 @@ public export
 
 -- auxilary chunk
 public export
-chunk : (Vect n a) -> (n : Nat) -> (m : Nat) 
+chunk2 : (Vect n a) -> (n : Nat) -> (m : Nat) 
      -> (prf : m `mod` n = 0) -> Vect n (Vect (m `div` n) a)
 
 -- sync
@@ -85,7 +84,7 @@ farmS : {m : Nat}
      -> Vect nw (Proc b (Su (m `div` nw)))
 farmS {m} f nw xs prf = 
     let ps = procN f nw 
-        ch = chunk xs nw m prf
+        ch = chunk2 xs nw m prf
         qs = ps <###> ch
     in qs
 
@@ -127,7 +126,6 @@ farmS' {m} {b} f nw xs prf =
       r    = p <##> ysA'
   in r
 
-
 data Stages : (n : Nat) -> (a : Type) -> (b : Type) -> (c : Type) -> Type where
   MkStagesNil : Stages Z a a a  
   MkStages : (s1 : Proc (b -> c) O)
@@ -139,13 +137,23 @@ foldStages (MkStages s2 MkStagesNil) = s2
 foldStages (MkStages s2 (MkStages s3 ss2)) =  
     case foldStages (MkStages s3 ss2) of 
         p2 => p2 >> s2
+
+-- mkStages : (s : Vect n t)
+--        -> ( (a,b,z) ** Stages n a b z)
  
 pipeS : (stages : Stages n a b z)
-     -> (input : Vect m a)
-     -> Maybe (Proc z (Su m))
+     -> (input : Vect (S m) a)
+     -> Maybe (Proc z (Su (S m)))
 pipeS MkStagesNil input = Nothing
 pipeS (MkStages s1 ss) input = 
-    let fs = foldStages (MkStages s1 ss) in Just (fs <##> input)
+    Just ((foldStages (MkStages s1 ss)) <##> input)
+
+pipe : (stages : Stages n a b z)
+    -> (input : Vect (S m) a)
+    -> Maybe (Vect (S m) z)
+pipe stages input = case pipeS stages input of 
+                        Nothing => Nothing 
+                        Just ps => Just (Pipar2.(<$$$>) ps)
 
 vectLem1 : (n : Nat) -> Vect (plus n (mult 0 n)) b -> Vect n b 
 vectLem1 Z [] = []

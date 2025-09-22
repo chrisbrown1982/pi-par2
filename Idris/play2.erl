@@ -27,7 +27,7 @@ drain_stream2([R | Results]) ->
 drain_stream() -> 
   receive 
     {sus_data, M} -> 
-        % io:format("drain received ~p ~n", [M]),
+        %io:format("drain received ~p ~n", [M]),
         drain_stream2( [M])
   end.
 
@@ -36,7 +36,7 @@ process_function_stream(Fun, Sus) ->
     receive
         stop -> stop; 
         {proc_data, M} ->
-            % io:format("process_function_stream: ~p~n", [M]),
+            %io:format("process_function_stream: ~p~n", [M]),
             Sus ! {sus_data, Fun(M)},
             process_function_stream(Fun, Sus)
     end.
@@ -44,15 +44,49 @@ process_function_stream(Fun, Sus) ->
 
 % process : (f : [a] -> [b]) -> Process [a] [b]
 process(F) ->
+    io:format("processing ~n", []),
     Sus = spawn(play2, drain_stream, []),
     Pid = spawn(play2, process_function_stream, [F, Sus]) ,
+    io:format("processed ~n", []),
     {Pid, Sus}.
 
+compF({Pid1, Sus1}, {Pid2, Sus2}, Sus) ->
+    io:format("compF! ~n", []),
+    receive
+        stop2 -> 
+            Pid1 ! stop,
+            Pid2 ! stop;
+        {proc_data2, M} ->
+            io:format("compF received ~p ~n", [M]),
+            Pid1 ! {proc_data, M},
+            M1 = sync_stream(Sus1),
+            io:format("compF received2 ~p ~n", [M1]),
+            Pid2 ! {proc_data, M1},
+            M2 = sync_stream(Sus2),
+            io:format("compF received3 ~p ~n", [M2]),
+            Sus ! {sus_data, (M2)},
+            compF({Pid1, Sus1}, {Pid2, Sus2}, Sus)
+    end.
+
+% comp : Proc a b -> Proc b c -> Proc a c 
+%comp({Pid1, Sus1}, {Pid2, Sus2}) ->
+%    io:format("comp! ~n", []),
+%    Sus = spawn(play2, drain_stream, []),
+%    Pid = spawn(play2, compF, [{Pid1, Sus1}, {Pid2, Sus2}, Sus]),
+%    {Pid, Sus}.
+
+
+
+
+
+distributorS(Pid, []) -> ok;
+distributorS(Pid, [M | Ms]) -> Pid ! {proc_data, M},
+                               distributorS(Pid, Ms).
 
 distributor([Pid | Pids]) ->
     receive 
         M -> % io:format("distributor received: ~p~n", [M]), 
-             Pid ! {proc_data, M},
+             distributorS(Pid, M),
              distributor( lists:append(Pids, [Pid]))
     end.
 
@@ -76,6 +110,17 @@ app_stream({Pid, Sus}, X) ->
     Pid ! {proc_data, X},
     Sus. 
 
+% app_stream : Process a b -> [a] -> Sus [b] 
+% <##>
+app_stream2({Pid, Sus}, []) -> 
+    Pid ! stop2,
+    Sus;
+app_stream2({Pid, Sus}, [X | Xs]) ->
+    io:format("app_stream2 sending ~p ~n", [X]),
+    Pid ! {proc_data2, X},
+    app_stream2({Pid, Sus}, Xs). 
+
+
 % sync_stream : Sus b -> b 
 sync_stream(Sus) ->
     Sus ! {release, self()},
@@ -92,15 +137,20 @@ sync_stream2(Sus, N) ->
     receive 
         stop -> [];
         [] -> sync_stream2(Sus, N);
-        M ->  %  io:format("sync_stream releasing: ~p ~n", [M]),
+        M ->  %io:format("sync_stream releasing: ~p ~n", [M]),
               [M | sync_stream2(Sus, N-1)]
     end. 
+
+sync_stream3(Sus, N) ->
+    R = sync_stream2(Sus, N),
+    fromList(R).
 
 
 % distribute : Processes [a] [b] -> a -> Sus [b]
 distribute({Pids, Sus, Distr}, X) ->
     Distr ! X.
 
+% <###>
 % distributeL : Processes [a] [b] -> [a] -> Sus [b] 
 distributeL ({Pids, Sus, Distr}, []) ->
     Sus;
@@ -120,6 +170,8 @@ connect({Pids, Sus, Distr}, Sus2, N) ->
     distributeL({Pids, Sus, Distr}, R),
     connect({Pids, Sus, Distr}, Sus2, N-1).
 
+
+
 nest (F1, Nw1, F2, Nw2, Inputs) ->
     Farm1 = processN(Nw1, F1),
 
@@ -130,6 +182,32 @@ nest (F1, Nw1, F2, Nw2, Inputs) ->
     SusF2 = connect(Farm2, SusF1, length(Inputs)),
 
     sync_stream2(SusF2, length(Inputs)).
+
+toList([]) -> [];
+toList([X | Xs]) -> [ [X] | toList(Xs)].
+
+fromList([]) -> [];
+fromList([ [X] | Xs]) -> [ X | fromList(Xs)].
+
+comp2([], Inputs, Sus) -> Sus;
+comp2([F2 | Fs], Inputs, Sus) ->
+    Farm2 = processN(1, F2),
+    SusF2 = connect(Farm2, Sus, length(Inputs)),
+    comp2(Fs, Inputs, SusF2).
+
+comp([F1 | [F2 | Fs]], Inputs) ->
+    Inputs2 = toList(Inputs),
+    Farm1 = processN(1, F1),
+
+    SusF1 = distributeL(Farm1, Inputs2),
+
+    Farm2 = processN(1, F2),
+
+    SusF2 = connect(Farm2, SusF1, length(Inputs2)),
+
+    comp2(Fs, Inputs2, SusF2).
+
+pipe(Fs, Input) -> sync_stream3(comp(Fs, Input), length(Input)).
 
 
 parMap(F, []) -> [];
