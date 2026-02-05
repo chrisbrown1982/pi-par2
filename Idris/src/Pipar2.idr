@@ -24,6 +24,10 @@ infixr 4 <#$>
 public export 
 (<#$>) : Proc a (Su n) -> (f : a -> b) -> Proc b (Su n)
 
+infixr 4 <#$$>
+public export 
+(<#$$>) : (f : a -> b -> c) -> Proc a (Su n) -> Proc b (Su n) -> Proc c (Su n)
+
 infixr 4 <#>
 public export
 (<#>) : Proc (a -> b) O -> a -> Proc b (Su 1) 
