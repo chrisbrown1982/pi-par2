@@ -19,6 +19,10 @@ procN : (a -> b) -> (n : Nat) -> Vect n (Proc (a -> b) O) -- derived
 
 -- apply
 
+-- apply function to a process 
+infixr 4 <#$>
+public export 
+(<#$>) : Proc a (Su n) -> (f : a -> b) -> Proc b (Su n)
 
 infixr 4 <#>
 public export
