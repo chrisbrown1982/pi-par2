@@ -69,6 +69,12 @@ chunkBalance d = chunk' where
   chunk' m xs = let (ys,zs) = splitAt (d+1) xs in ys :: chunk' (minus m 1) zs
     
 
+chunkBalance2 : Nat       -- chunk-length 
+            ->  Nat       -- number of bigger blocks 
+            -> PList a m  -- PList to be split 
+            -> PList a (n * m)
+
+    
 
 splitIntoN : Nat      -- ^ number of blocks
           -> List a   -- ^list to be split
@@ -76,10 +82,21 @@ splitIntoN : Nat      -- ^ number of blocks
 splitIntoN n xs = chunkBalance (l `div` n) (l `mod` n) xs where
   l = length xs
 
+splitIntoN2 : (n : Nat) 
+          -> PList a m 
+          -> PList a (n*m)
+
+foldr2 : (a -> b -> b) -> b -> PList a n -> Proc b (Su 1) 
+foldr2 f a PNil = (proc (\x => x) <#> a)
+foldr2 f a (PCons hd tl) = let r = (foldr2 f a tl)
+                           in (<#$$>) f hd r
 
 -- simple sequential map reduce (from Eden)
 mapRedr : (b -> c -> c) -> c -> (a -> b) -> List a -> c 
 mapRedr g e f = (foldr g e) . (map f)
+
+mapRedr2 : (b -> c -> c) -> c -> (a -> b) -> PList a n -> Proc c (Su 1) 
+mapRedr2 g e f = (foldr2 g e) . (parMap2 f)
 
 -- mapReduce converted from Eden
 -- converts to PList and back.
@@ -88,10 +105,18 @@ parMapRedr n g e f =
    (foldr g e) . fromPList . (parMap (mapRedr g e f)) . (splitIntoN  n)
 
 
-foldr2 : (a -> b -> b) -> b -> PList a n -> Proc b (Su 1) 
-foldr2 f a PNil = (proc (\x => x) <#> a)
-foldr2 f a (PCons hd tl) = let r = (foldr2 f a tl)
-                           in (<#$$>) f hd r
+
+
+parMapRedr2 : (n : Nat) -> (g : b -> b -> b) -> (e : b) -> (f : a -> b) 
+           -> (i : PList a n) 
+           -> Proc b (Su 1)
+parMapRedr2 n g e f i = 
+  let s  = splitIntoN2 n i 
+      f' = mapRedr2 g e f
+      ma = parMap2 f' 
+  in ?h
+
+  -- (foldr2 g e) . (parMap2 (mapRedr g e f)) . (splitIntoN2  n)
 
 {-
 chunkBalance2 : Nat    -- ^@ d @: chunk-length
