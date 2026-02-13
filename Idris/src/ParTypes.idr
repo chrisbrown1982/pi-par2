@@ -3,23 +3,8 @@ module ParTypes
 import Pipar2 
 import Data.List
 import Data.Nat
+import Data.Vect
 
--- basic implementation of a parallel list.
--- the cons constructor enforces that the head
--- is in a process.
-
-data PList : (a : Type) -> (p : Nat) -> Type where 
-    PNil  : PList a 0
-    PCons :  (hd : Proc a (Su 1))
-          -> (tl : PList a 0)
-          -> PList a 0
-
-    -- not sure we need this case at all... 
-    -- if we chunk then can simply cons a process with List a as the head...
-    PConsChk :  (hd : Proc a (Su n))
-              -> (tl : PList a m) 
-              -> PList a (S m)
-    
 
 -- naive version, takes a sequential list and
 -- returns a list of processes where each process
@@ -28,26 +13,48 @@ data PList : (a : Type) -> (p : Nat) -> Type where
 -- on reflection, this makes more sense than parMap2 below
 -- the result of the parMap is a parallel data structure
 -- representing the parallel map.
-parMap : (f : a -> b) -> List a -> PList b 0
-parMap f [] = PNil
-parMap f (hd :: tl) = PCons (proc f <#> hd) (parMap f tl)
+parMap : (f : a -> b) -> List a -> PList b Flat
+parMap f [] = PNil 
+parMap f (hd :: tl) = 
+  PCons (proc f <#> hd) (parMap f tl)
+
+
+
 
 -- better to do it this way:
 -- have a function that converts a list to a par list
 -- then apply parMap to the converted list.
-toPList : List a -> PList a 0
-toPList [] = PNil 
-toPList (x::xs) = PCons (proc (\x => x) <#> x) (toPList xs)
+toPList : List a -> PList a Flat
+toPList [] = PNil
+toPList (x::xs) = 
+  PCons (proc (\x => x) <#> x) (toPList xs)
 
-fromPList : PList a 0 -> List a
+toPListV : Vect n a -> PList a Flat
+toPListV [] = PNil
+toPListV (x::xs) = 
+  PCons (proc (\x => x) <#> x) (toPListV xs)
+
+fromPList : PList a Flat -> List a
 fromPList PNil = [] 
 fromPList (PCons hd tl) = let (p, r) = (<$>) hd 
                           in r :: fromPList tl
 
-parMap2 : (f : a -> b) -> PList a n -> PList b n
+
+
+parMap2 : (f : a -> b) -> PList a Flat -> PList b Flat
 parMap2 f PNil = PNil 
 parMap2 f (PCons hd tl) = PCons (hd <#$> f) (parMap2 f tl)
-parMap2 f (PConsChk hd tl) = PConsChk (hd <#$> f) (parMap2 f tl)
+-- parMap2 f (PConsChk hd tl) = PConsChk (hd <#$> f) (parMap2 f tl)
+
+parMap3 : (f : a -> b) -> PList a chk -> PList b chk 
+parMap3 f PNil = PNil
+parMap3 f (PCons hd tl) = PCons (hd <#$> f) (parMap3 f tl)
+parMap3 f PNilChk = PNilChk
+parMap3 f (PConsChk hd tl) = PConsChk (hd <#$> f) (parMap3 f tl)
+
+parMap4 : (f : PList a (Chk x y) -> b) -> PList a (Chk t u) -> PList b (Chk x y) 
+
+
 
 --
 -- reduce and parallel map-reduce
@@ -69,11 +76,11 @@ chunkBalance d = chunk' where
   chunk' m xs = let (ys,zs) = splitAt (d+1) xs in ys :: chunk' (minus m 1) zs
     
 
-chunkBalance2 : Nat       -- chunk-length 
-            ->  Nat       -- number of bigger blocks 
-            -> PList a m  -- PList to be split 
-            -> PList a (n * m)
-   
+chunkBalance2 : (n: Nat)        -- chunk-length 
+            ->  (m : Nat)       -- number of bigger blocks 
+            -> PList a chks -- PList to be split 
+            -> (chks2 ** PList a chks2)  -- PList with each element chunked by n?
+
 
 splitIntoN : Nat      -- ^ number of blocks
           -> List a   -- ^list to be split
@@ -82,41 +89,63 @@ splitIntoN n xs = chunkBalance (l `div` n) (l `mod` n) xs where
   l = length xs
 
 splitIntoN2 : (n : Nat) 
-          -> PList a m 
-          -> PList a (n*m)
+          -> PList a chks
+          -> (m ** r ** PList a (Chk m r ))  -- with each element being a proc with n things
 
+ 
 -- simple sequential map reduce (from Eden)
 mapRedr : (b -> c -> c) -> c -> (a -> b) -> List a -> c 
 mapRedr g e f = (foldr g e) . (map f)
 
 
-foldr2 : (a -> b -> b) -> b -> PList a n -> Proc b (Su 1) 
+-- re implement as a parallel fold... 
+-- enough for map reduce now ... 
+-- needs to be associative ... 
+foldr2 : (a -> a -> a) -> a 
+      -> PList a chks  
+      -> Proc a (Su 1) 
 foldr2 f a PNil = (proc (\x => x) <#> a)
 foldr2 f a (PCons hd tl) = let r = (foldr2 f a tl)
                            in (<#$$>) f hd r
+foldr2 f a (PNilChk) = (proc (\x => x) <#> a)
+foldr2 f a (PConsChk hd tl) = let hd' = (<$$$>) hd
+                                  r   = (proc (\x => x) <#> foldr f a hd')
+                                  res = foldr2 f a tl 
+                                  u   = (<#$$>) f r res
+                              in u
+                              
 
-mapRedr2 : (b -> c -> c) -> c -> (a -> b) -> PList a n -> Proc c (Su 1) 
-mapRedr2 g e f = (foldr2 g e) . (parMap2 f)
+
+mapRedr2 : (b -> b -> b) -> b -> (a -> b) 
+        -> PList a ch 
+        -> Proc b (Su 1) 
+mapRedr2 g e f = (foldr2 g e) . (parMap3 f)
+
+
 
 -- mapReduce converted from Eden
 -- converts to PList and back.
-parMapRedr : (n : Nat) -> (b -> b -> b) -> b -> (a -> b) -> List a -> b 
+parMapRedr : (n : Nat) -> (b -> b -> b) -> b -> (a -> b) 
+          -> List a -> b 
 parMapRedr n g e f = 
    (foldr g e) . fromPList . (parMap (mapRedr g e f)) . (splitIntoN  n)
 
-parMap3 : (PList a n -> b) -> PList a (n*n) -> PList b n
 
-lem1 : PList (Proc a (Su 1)) n -> PList a n
 
-parMapRedr2 : (n : Nat) -> (g : b -> b -> b) -> (e : b) -> (f : a -> b) 
-           -> (i : PList a n) 
+
+lem1 : PList (Proc a (Su 1)) chks -> PList a cks
+
+parMapRedr2 : (n : Nat) -> (g : b -> b -> b) -> (e : b) 
+           -> (f : a -> b) 
+           -> (i : PList a chks) 
            -> Proc b (Su 1)
 parMapRedr2 n g e f i = 
-  let s  = splitIntoN2 n i 
+  let (x ** y ** s)  = splitIntoN2 n i 
       f' = mapRedr2 g e f
-      ma = parMap3 f' s
-      fo = foldr2 g e (lem1 ma)
-  in fo
+      ma = parMap4 f' ?t
+      fo = foldr2 g e
+  in ?h
+
 
 
 {-
@@ -143,3 +172,4 @@ parMapRedr2 : (n : Nat) -> (b -> b -> b) -> b -> (a -> b) -> PList a n -> Proc b
 parMapRedr2 n g e f = 
    (foldr2 g e) . (parMap2 (mapRedr g e f)) . (splitIntoN2  n)
 -}
+

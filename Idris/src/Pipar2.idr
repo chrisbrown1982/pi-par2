@@ -26,7 +26,10 @@ public export
 
 infixr 4 <#$$>
 public export 
-(<#$$>) : (f : a -> b -> c) -> Proc a (Su n) -> Proc b (Su n) -> Proc c (Su n)
+(<#$$>) : (f : a -> b -> c) 
+       -> Proc a (Su n) 
+       -> Proc b (Su n) 
+       -> Proc c (Su n)
 
 infixr 4 <#>
 public export
@@ -134,7 +137,8 @@ farmS' {m} {b} f nw xs prf =
       r    = p <##> ysA'
   in r
 
-data Stages : (n : Nat) -> (a : Type) -> (b : Type) -> (c : Type) -> Type where
+data Stages : (n : Nat) -> (a : Type) 
+        -> (b : Type) -> (c : Type) -> Type where
   MkStagesNil : Stages Z a a a  
   MkStages : (s1 : Proc (b -> c) O)
           -> (ss : Stages n a d b)
@@ -181,3 +185,35 @@ dc split join thre solve input with (thre input)
             reA = re <####> xs
             syn = vectLem1 n ((<$$>) reA)
         in join {n} syn
+
+
+-- basic implementation of a parallel list.
+-- the cons constructor enforces that the head
+-- is in a process.
+
+public export
+data ChkKind : Type where 
+  Flat : ChkKind 
+  Chk  : (n : Nat)
+      -> (rest : List Nat) 
+      -> ChkKind 
+
+public export
+data PList : (a : Type)
+          -> (chkd : ChkKind) 
+      --    -> (i : Nat)     -- size of inner chunk
+      --    -> (o : Nat)    -- size of outer chunk
+          -> Type where 
+    PNil  : PList a Flat -- 0 0
+
+    PNilChk : PList a (Chk 0 [])
+    
+    PCons :  (hd : Proc a (Su 1))
+          -> (tl : PList a Flat)
+          -> PList a Flat
+          
+    -- not sure we need this case at all... 
+    -- if we chunk then can simply cons a process with List a as the head...
+    PConsChk  :  (hd : Proc a (Su (S n)))
+              -> (tl : PList a (Chk t ts)) 
+              -> PList a (Chk (S n) (t :: chks))
