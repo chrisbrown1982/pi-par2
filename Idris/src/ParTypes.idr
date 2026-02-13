@@ -52,7 +52,7 @@ parMap3 f (PCons hd tl) = PCons (hd <#$> f) (parMap3 f tl)
 parMap3 f PNilChk = PNilChk
 parMap3 f (PConsChk hd tl) = PConsChk (hd <#$> f) (parMap3 f tl)
 
-parMap4 : (f : PList a (Chk x y) -> b) -> PList a (Chk t u) -> PList b (Chk x y) 
+parMap4 : (f : PList a Flat -> b) -> PList a chk -> PList b chk 
 
 
 
@@ -133,18 +133,18 @@ parMapRedr n g e f =
 
 
 
-lem1 : PList (Proc a (Su 1)) chks -> PList a cks
+lem1 : PList (Proc a (Su 1)) chks -> PList a chks
 
 parMapRedr2 : (n : Nat) -> (g : b -> b -> b) -> (e : b) 
            -> (f : a -> b) 
            -> (i : PList a chks) 
            -> Proc b (Su 1)
 parMapRedr2 n g e f i = 
-  let (x ** y ** s)  = splitIntoN2 n i 
-      f' = mapRedr2 g e f
-      ma = parMap4 f' ?t
-      fo = foldr2 g e
-  in ?h
+  let (x ** y ** s)  = splitIntoN2 n i -- PList a (Chk x y)
+      f' = mapRedr2 g e f -- Plist a Flat -> Proc b (Su 1)
+      ma = parMap4 f' s -- PList a ?chk -> PList (Proc b (Su 1)) ?chk
+      fo = foldr2 g e (lem1 ma)  -- PList b ?chks -> Proc b (Su 1)
+  in fo
 
 
 

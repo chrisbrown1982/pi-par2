@@ -216,4 +216,4 @@ data PList : (a : Type)
     -- if we chunk then can simply cons a process with List a as the head...
     PConsChk  :  (hd : Proc a (Su (S n)))
               -> (tl : PList a (Chk t ts)) 
-              -> PList a (Chk (S n) (t :: chks))
+              -> PList a (Chk (S n) (t :: ts))
