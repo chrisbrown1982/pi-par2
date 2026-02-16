@@ -52,8 +52,17 @@ parMap3 f (PCons hd tl) = PCons (hd <#$> f) (parMap3 f tl)
 parMap3 f PNilChk = PNilChk
 parMap3 f (PConsChk hd tl) = PConsChk (hd <#$> f) (parMap3 f tl)
 
-parMap4 : (f : PList a Flat -> b) -> PList a chk -> PList b chk 
-
+-- %default total
+parMapFol : -- (n : Nat) 
+          (f : Proc a (Su n) -> Proc b (Su 1)) 
+       -> PList a (Chk n y) 
+       -> PList b Flat
+parMapFol f PNil             impossible 
+parMapFol f (PCons hd tl)    impossible 
+parMapFol f PNilChk              = PNil 
+parMapFol {n=S n} f (PConsChk {t=S n} hd tl) = let r = f hd
+                                                   t = (parMapFol f tl)
+                                               in ?bo
 
 
 --
@@ -121,7 +130,10 @@ mapRedr2 : (b -> b -> b) -> b -> (a -> b)
         -> Proc b (Su 1) 
 mapRedr2 g e f = (foldr2 g e) . (parMap3 f)
 
-
+mapRedr3 : (b -> b -> b) -> b -> (a -> b) 
+        -> (n : Nat)
+        -> Proc a (Su n) 
+        -> Proc b (Su 1)
 
 -- mapReduce converted from Eden
 -- converts to PList and back.
@@ -129,6 +141,7 @@ parMapRedr : (n : Nat) -> (b -> b -> b) -> b -> (a -> b)
           -> List a -> b 
 parMapRedr n g e f = 
    (foldr g e) . fromPList . (parMap (mapRedr g e f)) . (splitIntoN  n)
+
 
 
 
@@ -141,9 +154,9 @@ parMapRedr2 : (n : Nat) -> (g : b -> b -> b) -> (e : b)
            -> Proc b (Su 1)
 parMapRedr2 n g e f i = 
   let (x ** y ** s)  = splitIntoN2 n i -- PList a (Chk x y)
-      f' = mapRedr2 g e f -- Plist a Flat -> Proc b (Su 1)
-      ma = parMap4 f' s -- PList a ?chk -> PList (Proc b (Su 1)) ?chk
-      fo = foldr2 g e (lem1 ma)  -- PList b ?chks -> Proc b (Su 1)
+      f' = mapRedr3 g e f x-- Plist a Flat -> Proc b (Su 1)
+      ma = parMapFol f'  s -- PList a ?chk -> PList (Proc b (Su 1)) ?chk
+      fo = foldr2 g e ma  -- PList b ?chks -> Proc b (Su 1)
   in fo
 
 

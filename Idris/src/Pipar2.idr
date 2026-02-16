@@ -24,6 +24,11 @@ infixr 4 <#$>
 public export 
 (<#$>) : Proc a (Su n) -> (f : a -> b) -> Proc b (Su n)
 
+-- fold in a process
+infixr 4 <#++>
+public export
+(<#++>) : Proc a (Su n) -> (f : a -> a -> a) -> a -> Proc a (Su 1)
+
 infixr 4 <#$$>
 public export 
 (<#$$>) : (f : a -> b -> c) 
@@ -194,9 +199,19 @@ dc split join thre solve input with (thre input)
 public export
 data ChkKind : Type where 
   Flat : ChkKind 
-  Chk  : (n : Nat)
-      -> (rest : List Nat) 
-      -> ChkKind 
+  
+  -- each chunk is a different size
+  -- TODO!
+  {-
+  ChkHet  : (n : Nat)           
+         -> (rest : List Nat) 
+         -> ChkKind 
+
+  -}
+
+  -- each chunk is the same size
+  ChkHom  : (n : Nat)
+         -> ChkKind                 
 
 public export
 data PList : (a : Type)
@@ -206,7 +221,7 @@ data PList : (a : Type)
           -> Type where 
     PNil  : PList a Flat -- 0 0
 
-    PNilChk : PList a (Chk 0 [])
+    -- PNilChkHet : PList a (ChkHet 0 [])
     
     PCons :  (hd : Proc a (Su 1))
           -> (tl : PList a Flat)
@@ -214,6 +229,12 @@ data PList : (a : Type)
           
     -- not sure we need this case at all... 
     -- if we chunk then can simply cons a process with List a as the head...
-    PConsChk  :  (hd : Proc a (Su (S n)))
-              -> (tl : PList a (Chk t ts)) 
-              -> PList a (Chk (S n) (t :: ts))
+    -- PConsChkHet  :  (hd : Proc a (Su (S n)))
+    --             -> (tl : PList a (ChkHet t ts)) 
+    --             -> PList a (ChkHet (S n) (t :: ts))
+
+    PConsChkHom : (hd : Proc a (Su (S n)))
+               -> (tl : PList a (ChkHom (S n)))
+               -> PList a (ChkHom (S n))
+
+    PNilChkHom : PList a (ChkHom (S n))
