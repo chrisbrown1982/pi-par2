@@ -52,6 +52,10 @@ mapRedr3 : (g : b -> b -> b)
 mapRedr3 g e f n l = (<#++>) (l <#$> f) g e
 
 
+-- simple sequential map reduce (from Eden)
+mapRedr : (b -> c -> c) -> c -> (a -> b) -> List a -> c 
+mapRedr g e f = (foldr g e) . (map f)
+
 parMapRedr2 : (n : Nat) -> (g : b -> b -> b) -> (e : b) 
            -> (f : a -> b) 
            -> (i : PList a chks) 
@@ -62,3 +66,16 @@ parMapRedr2 n g e f i =
       ma = parMapFol f'  s -- PList a ?chk -> PList (Proc b (Su 1)) ?chk
       fo = foldr2 g e ma  -- PList b ?chks -> Proc b (Su 1)
   in fo
+
+
+cpi : Integer -> Double 
+cpi n = mapRedr (+) 0 (f . index) [1..n] / fromInteger n 
+  where 
+    f : Double -> Double 
+    f x = 4 / (1 + x * x)
+  
+    index : Integer -> Double
+    index i = fromInteger i - 0.5
+
+    index2 : Integer -> Integer -> Double 
+    index2 i n = index i / fromInteger n
