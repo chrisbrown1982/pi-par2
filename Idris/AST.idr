@@ -54,6 +54,7 @@ data EStmt : Type where
   ESVar   : String -> EStmt
   ESCst  : String -> EStmt -- numbers, strings, &c. NOT SURE ABOUT THIS
   ESApp   : String -> List EStmt -> EStmt
+  ESApp2 : EStmt -> List EStmt -> EStmt
   ESInfixApp : EStmt -> String -> EStmt -> EStmt
   ESString : String -> EStmt
   ESMatchOp : List EPat -> EStmt -> EStmt
@@ -123,6 +124,7 @@ mutual
       "fChan" => "utils:fst"
       "sChan" => "utils:snd"
       "chunk" => "utils:n_length_chunks"
+      "chunk2" => "utils:unshuffle"
       "fst" => "utils:fst2"
       "snd" => "utils:snd2"
       "zip1" => "lists:zip"
@@ -141,6 +143,14 @@ mutual
       "app" => "lists:append"
       "S" => "utils:s"
       "rem" => "rem"
+      "procN" => "play2:processN"
+      "divLem" => "utils:divLem"
+      "<$$>" => "play2:sync_stream2"
+      "foldStages" => "play2:foldStages"
+      "connectStages" => "play2:comp"
+      "Just" => "utils:just"
+      "<##>" => "play2:app_stream2"
+      "<$$$>" => "play2:sync_stream3"
 
       fn => "?MODULE:" ++ fn
 
@@ -152,6 +162,7 @@ mutual
       "True" => "true"
       "False" => "false"
       "andB" => "fun(X,Y) -> X and Y end"
+      "Nothing" => "nothing"
       fn => fn
 
   pRecvs : Bool -> String -> String -> List (EPat, List EStmt) -> String 
@@ -164,11 +175,23 @@ mutual
   pStmts b t e [] = "" 
   pStmts b t e (ESVar x :: ss) = t ++ (pVar x) ++ " " ++ (eF ss e) ++ pStmts b t e ss 
   pStmts b t e (ESCst c :: ss) = t ++ c ++ " " ++ (eF ss e) ++ pStmts b t e ss 
+  pStmts b t e (ESApp2 s1 args::ss) = 
+    t ++ (pStmts b t e [s1]) ++ "( " ++ pStmts b "" " , " args ++ " ) " ++ (eF ss e) ++ pStmts b t e ss
   pStmts b t e (ESApp fn args::ss) = 
     if fn == "Pure" || fn == "Return" then 
-        t ++ pStmts b "" " , " args ++  (eF ss e) ++ pStmts b t e ss 
-
-     else
+        t ++ pStmts b "" " , " args ++  (eF ss e) ++ pStmts b t e ss    
+    else if fn == "<$$$>" then 
+        t 
+        ++ "play2:sync_stream3("
+        ++ pStmts b "" " , " args
+        ++ " "
+        ++ ","
+        ++ " "
+        ++ "length(Input)"
+        ++ ")"
+        ++ (eF ss e)
+        ++ pStmts b t e ss
+    else
         t ++ (pFun fn) ++ "( " ++ pStmts b "" " , " args ++ " ) " ++  (eF ss e) ++ pStmts b t e ss 
   pStmts b t e (ESInfixApp t1 str t2 :: ss) = 
     if str == "::" then 
@@ -193,6 +216,39 @@ mutual
       ++ ")"
       ++ (eF ss e)
       ++ pStmts b t e ss
+       else if str == "<###>" then 
+        t 
+        ++ "play2:distributeL("
+        ++ pStmts b "" e [t1]
+        ++ " "
+        ++ ","
+        ++ " "
+        ++ pStmts b "" e [t2]
+        ++ ")"
+        ++ (eF ss e)
+        ++ pStmts b t e ss
+       else if str == "<##>" then 
+        t 
+        ++ "play2:app_stream2("
+        ++ pStmts b "" e [t1]
+        ++ " "
+        ++ ","
+        ++ " "
+        ++ pStmts b "" e [t2]
+        ++ ")"
+        ++ (eF ss e)
+        ++ pStmts b t e ss
+       else if str == ">>" then 
+        t 
+        ++ "play2:comp("
+        ++ pStmts b "" e [t1]
+        ++ " "
+        ++ ","
+        ++ " "
+        ++ pStmts b "" e [t2]
+        ++ ")"
+        ++ (eF ss e)
+        ++ pStmts b t e ss
        else 
          t 
       ++ pStmts b "" e [t1]
@@ -374,6 +430,8 @@ prelude "print"    = ESVar "io:format"
 prelude "Halt"     = ESVar "halt"
 prelude "MEnd"     = ESVar "mend"
 prelude "Msg"      = ESVar "msg"
+prelude "MkStageNil" = ESVar "mkstagesnil"
+prelude "MkStages" = ESVar "mkstages"
 prelude str        = ESVar str
 
 toEVarName : String -> String
@@ -430,25 +488,28 @@ genEPats env (PRef fc n) = do
   "Z" <- getNameStrFrmName env n
     | n' => case n' of 
               "MEnd" => pure ([EPVar "mend"], ("MEnd","mend") :: env)
+            --  "input" => pure ([EPPair [EPVar "mkstagenil"] [EPVar (toEVarName "input")] ], (n',n') :: env)
               n'' => pure ([EPVar (toEVarName n'')], (n'',n'') :: env)
   pure ([EPVar "0"], ("Z","0") :: env)
 genEPats env (PApp fc (PRef _ nm) (PRef _ nm2)) = do 
+  -- error (">>>" ++ show nm)
   "S" <- getNameStrFrmName env nm 
-    | n => do  
-              -- nm1 <- getNameStrFrmName env nm
-              "Z" <- getNameStrFrmName env nm2 
-                | nm2 => pure ([EPVar ((toEVarName nm2))], (nm2,nm2) :: env)
-              pure ([EPVar "0"], ("Z","0") :: env)
-
-
+    | n => case n of 
+              "mkstagesnil" => error "here"   
+              n' => do
+                  -- nm1 <- getNameStrFrmName env nm
+                    "Z" <- getNameStrFrmName env nm2 
+                      | nm2 => case nm2 of 
+                                "mkstagesnil" => error (">" ++ show n)
+                                nm2' => pure ([EPVar ((toEVarName nm2))], (nm2,nm2) :: env)
+                    pure ([EPVar "0"], ("Z","0") :: env)
   nm2' <- getNameStrFrmName env nm2 
                --env' <- rewriteN nm2' (nm2++"-1")
   pure ([EPVar (toEVarName nm2')], (nm2',(nm2'++"-1")) :: env)
-genEPats env (PApp fc (PRef _ nm) x) = -- do 
- -- "S" <- getNameStrFrmName env nm 
- --   | n => do  (x', env' ) <- genEPats env x
- --              pure (((EPVar (toEVarName "S")) :: x'), env')
-  genEPats env x 
+genEPats env (PApp fc (PRef _ nm) x) =  do
+   "MkStages" <- getNameStrFrmName env nm 
+      | n => genEPats env x 
+   error (show x)
 genEPats env (PApp fc f x) = do
   (xs, env')  <- genEPats env f
   (ys, env'') <- genEPats env' x
@@ -484,12 +545,17 @@ genEPatsTop env (PRef fc n) = do
   pure ([EPVar "mend"], ("mend","mend") :: env) -- no arguments
 genEPatsTop env (PApp fc (PRef _ nm) (PRef _ nm2)) = do 
   "msg" <- getNameStrFrmName env nm 
-    | n => do  
-              nm2' <- getNameStrFrmName env nm2
-              pure ([EPVar (toEVarName nm2')], (nm2', nm2') :: env)
+    | n => do 
+                            nm2' <- getNameStrFrmName env nm2
+
+                            pure ([EPVar (toEVarName nm2')], (nm2', nm2') :: env)
+           
   nm2 <- getNameStrFrmName env nm2 
   pure ([EPPair [EPVar "msg"] [EPVar (toEVarName nm2)] ], (nm2,nm2) :: env)
             -- pure ([EPVar "0"], ("Z","0") :: env)
+                
+-- genEPatsTop env (PApp fc (PApp fc2 (PRef _ a) (PRef _ b)) (PRef _ c)) = do
+--   error ("here" ++ (show a))
 genEPatsTop env p = genEPats env p
 
 -------------------------------------------------------------------------------
@@ -579,7 +645,10 @@ mutual
         case fn of 
           "msg" => do pure ([EPair [ESVar "msg"] [x']], env')
           _ => do pure ([ESApp fn [x']], env'')
-      | f' => error $ "TODO: " ++ show f'
+      | (f', env') => do 
+                --  (f'', env'') <- genEStmt env f
+                  (x', env'') <- genEStmt env' x
+                  pure ([ESApp2 f' [x']], env'')
     (x', env') <- genEStmt env x
     pure ([ESApp fn (xs ++ [x'])], env')
   genEStmts env (PString fc ht strs) = do
@@ -702,11 +771,29 @@ genIR m = do
 
 -----------------------------------------------------------------------------
 
-main : String -> String -> IO ()
-main i o = do
-  let fName = i
+main : IO ()
+main = do
+  -- let fName = "Main5.idr"
+  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "Main5")
+  -- let fName = "ParseEx.idr"
+  -- let fName = "SumEuler.idr"
 
-  let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing o)
+  let fName = "Farm.idr"
+
+  -- let fName = "ParSumEuler2.idr"
+
+  -- let fName = "ParMatMul.idr"
+
+  -- let fName = "ParQueens.idr"
+
+  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "ParseEx")
+  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "SumEuler")
+  let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "Farm")
+  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "ParSumEuler2")
+
+  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "ParMatMul")
+
+  -- let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "ParQueens")
 
   Right rawSrc <- readFile fName
     | Left err => printLn err
@@ -718,7 +805,9 @@ main i o = do
   let Just ir = genIR mod
     | Err (StdErr err) => die err
     
-  -- putStrLn (showEMod mod)
+  
+  putStrLn (show mod.decls)
   putStrLn (show ir)
 
   putStrLn (pMod ir)
+  -- mod.decls
