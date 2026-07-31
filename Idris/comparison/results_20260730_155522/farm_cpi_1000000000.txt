@@ -1,0 +1,1135 @@
+# Elysium task farm: cpi N=1000000000 -- Thu Jul 30 15:55:22 BST 2026
+=== 2 workers ===
+CPI [{n,1},
+     {min,263828436},
+     {max,263828436},
+     {med,263828436},
+     {mean,263828436.0},
+     {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+CPI [{n,1},
+     {min,257494406},
+     {max,257494406},
+     {med,257494406},
+     {mean,257494406.0},
+     {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+CPI [{n,1},
+     {min,255857766},
+     {max,255857766},
+     {med,255857766},
+     {mean,255857766.0},
+     {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+CPI [{n,1},
+     {min,278887166},
+     {max,278887166},
+     {med,278887166},
+     {mean,278887166.0},
+     {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+CPI [{n,1},
+     {min,250557310},
+     {max,250557310},
+     {med,250557310},
+     {mean,250557310.0},
+     {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+CPI [{n,1},
+     {min,255147224},
+     {max,255147224},
+     {med,255147224},
+     {mean,255147224.0},
+     {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+CPI [{n,1},
+     {min,252906204},
+     {max,252906204},
+     {med,252906204},
+     {mean,252906204.0},
+     {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+CPI [{n,1},
+     {min,255108242},
+     {max,255108242},
+     {med,255108242},
+     {mean,255108242.0},
+     {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+CPI [{n,1},
+     {min,255215717},
+     {max,255215717},
+     {med,255215717},
+     {mean,255215717.0},
+     {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+CPI [{n,1},
+     {min,251008159},
+     {max,251008159},
+     {med,251008159},
+     {mean,251008159.0},
+     {std_dev,0.0}]
+Done with examples on 2 cores.
+--------
+=== 4 workers ===
+CPI [{n,1},
+     {min,162576228},
+     {max,162576228},
+     {med,162576228},
+     {mean,162576228.0},
+     {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+CPI [{n,1},
+     {min,183157768},
+     {max,183157768},
+     {med,183157768},
+     {mean,183157768.0},
+     {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+CPI [{n,1},
+     {min,164817317},
+     {max,164817317},
+     {med,164817317},
+     {mean,164817317.0},
+     {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+CPI [{n,1},
+     {min,161807915},
+     {max,161807915},
+     {med,161807915},
+     {mean,161807915.0},
+     {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+CPI [{n,1},
+     {min,165272727},
+     {max,165272727},
+     {med,165272727},
+     {mean,165272727.0},
+     {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+CPI [{n,1},
+     {min,166137482},
+     {max,166137482},
+     {med,166137482},
+     {mean,166137482.0},
+     {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+CPI [{n,1},
+     {min,182739230},
+     {max,182739230},
+     {med,182739230},
+     {mean,182739230.0},
+     {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+CPI [{n,1},
+     {min,167113917},
+     {max,167113917},
+     {med,167113917},
+     {mean,167113917.0},
+     {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+CPI [{n,1},
+     {min,163791796},
+     {max,163791796},
+     {med,163791796},
+     {mean,163791796.0},
+     {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+CPI [{n,1},
+     {min,180036419},
+     {max,180036419},
+     {med,180036419},
+     {mean,180036419.0},
+     {std_dev,0.0}]
+Done with examples on 4 cores.
+--------
+=== 6 workers ===
+CPI [{n,1},
+     {min,137864569},
+     {max,137864569},
+     {med,137864569},
+     {mean,137864569.0},
+     {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+CPI [{n,1},
+     {min,144847668},
+     {max,144847668},
+     {med,144847668},
+     {mean,144847668.0},
+     {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+CPI [{n,1},
+     {min,151579593},
+     {max,151579593},
+     {med,151579593},
+     {mean,151579593.0},
+     {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+CPI [{n,1},
+     {min,141594706},
+     {max,141594706},
+     {med,141594706},
+     {mean,141594706.0},
+     {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+CPI [{n,1},
+     {min,145124283},
+     {max,145124283},
+     {med,145124283},
+     {mean,145124283.0},
+     {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+CPI [{n,1},
+     {min,136474135},
+     {max,136474135},
+     {med,136474135},
+     {mean,136474135.0},
+     {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+CPI [{n,1},
+     {min,142396716},
+     {max,142396716},
+     {med,142396716},
+     {mean,142396716.0},
+     {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+CPI [{n,1},
+     {min,142163837},
+     {max,142163837},
+     {med,142163837},
+     {mean,142163837.0},
+     {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+CPI [{n,1},
+     {min,139069480},
+     {max,139069480},
+     {med,139069480},
+     {mean,139069480.0},
+     {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+CPI [{n,1},
+     {min,140606983},
+     {max,140606983},
+     {med,140606983},
+     {mean,140606983.0},
+     {std_dev,0.0}]
+Done with examples on 6 cores.
+--------
+=== 8 workers ===
+CPI [{n,1},
+     {min,133512290},
+     {max,133512290},
+     {med,133512290},
+     {mean,133512290.0},
+     {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+CPI [{n,1},
+     {min,125067503},
+     {max,125067503},
+     {med,125067503},
+     {mean,125067503.0},
+     {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+CPI [{n,1},
+     {min,126076829},
+     {max,126076829},
+     {med,126076829},
+     {mean,126076829.0},
+     {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+CPI [{n,1},
+     {min,126501307},
+     {max,126501307},
+     {med,126501307},
+     {mean,126501307.0},
+     {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+CPI [{n,1},
+     {min,132863678},
+     {max,132863678},
+     {med,132863678},
+     {mean,132863678.0},
+     {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+CPI [{n,1},
+     {min,124475954},
+     {max,124475954},
+     {med,124475954},
+     {mean,124475954.0},
+     {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+CPI [{n,1},
+     {min,137487709},
+     {max,137487709},
+     {med,137487709},
+     {mean,137487709.0},
+     {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+CPI [{n,1},
+     {min,141729459},
+     {max,141729459},
+     {med,141729459},
+     {mean,141729459.0},
+     {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+CPI [{n,1},
+     {min,138287378},
+     {max,138287378},
+     {med,138287378},
+     {mean,138287378.0},
+     {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+CPI [{n,1},
+     {min,127425865},
+     {max,127425865},
+     {med,127425865},
+     {mean,127425865.0},
+     {std_dev,0.0}]
+Done with examples on 8 cores.
+--------
+=== 10 workers ===
+CPI [{n,1},
+     {min,133661917},
+     {max,133661917},
+     {med,133661917},
+     {mean,133661917.0},
+     {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+CPI [{n,1},
+     {min,133653684},
+     {max,133653684},
+     {med,133653684},
+     {mean,133653684.0},
+     {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+CPI [{n,1},
+     {min,149491516},
+     {max,149491516},
+     {med,149491516},
+     {mean,149491516.0},
+     {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+CPI [{n,1},
+     {min,138600222},
+     {max,138600222},
+     {med,138600222},
+     {mean,138600222.0},
+     {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+CPI [{n,1},
+     {min,151060500},
+     {max,151060500},
+     {med,151060500},
+     {mean,1.510605e8},
+     {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+CPI [{n,1},
+     {min,151028592},
+     {max,151028592},
+     {med,151028592},
+     {mean,151028592.0},
+     {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+CPI [{n,1},
+     {min,133652444},
+     {max,133652444},
+     {med,133652444},
+     {mean,133652444.0},
+     {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+CPI [{n,1},
+     {min,147892950},
+     {max,147892950},
+     {med,147892950},
+     {mean,147892950.0},
+     {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+CPI [{n,1},
+     {min,138275454},
+     {max,138275454},
+     {med,138275454},
+     {mean,138275454.0},
+     {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+CPI [{n,1},
+     {min,132322846},
+     {max,132322846},
+     {med,132322846},
+     {mean,132322846.0},
+     {std_dev,0.0}]
+Done with examples on 10 cores.
+--------
+=== 12 workers ===
+CPI [{n,1},
+     {min,133905733},
+     {max,133905733},
+     {med,133905733},
+     {mean,133905733.0},
+     {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+CPI [{n,1},
+     {min,149420140},
+     {max,149420140},
+     {med,149420140},
+     {mean,149420140.0},
+     {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+CPI [{n,1},
+     {min,132968472},
+     {max,132968472},
+     {med,132968472},
+     {mean,132968472.0},
+     {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+CPI [{n,1},
+     {min,148817233},
+     {max,148817233},
+     {med,148817233},
+     {mean,148817233.0},
+     {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+CPI [{n,1},
+     {min,155569660},
+     {max,155569660},
+     {med,155569660},
+     {mean,155569660.0},
+     {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+CPI [{n,1},
+     {min,146011456},
+     {max,146011456},
+     {med,146011456},
+     {mean,146011456.0},
+     {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+CPI [{n,1},
+     {min,146929687},
+     {max,146929687},
+     {med,146929687},
+     {mean,146929687.0},
+     {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+CPI [{n,1},
+     {min,150920270},
+     {max,150920270},
+     {med,150920270},
+     {mean,150920270.0},
+     {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+CPI [{n,1},
+     {min,152367801},
+     {max,152367801},
+     {med,152367801},
+     {mean,152367801.0},
+     {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+CPI [{n,1},
+     {min,138542028},
+     {max,138542028},
+     {med,138542028},
+     {mean,138542028.0},
+     {std_dev,0.0}]
+Done with examples on 12 cores.
+--------
+=== 14 workers ===
+CPI [{n,1},
+     {min,167308596},
+     {max,167308596},
+     {med,167308596},
+     {mean,167308596.0},
+     {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+CPI [{n,1},
+     {min,180284375},
+     {max,180284375},
+     {med,180284375},
+     {mean,180284375.0},
+     {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+CPI [{n,1},
+     {min,154362780},
+     {max,154362780},
+     {med,154362780},
+     {mean,154362780.0},
+     {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+CPI [{n,1},
+     {min,162362579},
+     {max,162362579},
+     {med,162362579},
+     {mean,162362579.0},
+     {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+CPI [{n,1},
+     {min,160613503},
+     {max,160613503},
+     {med,160613503},
+     {mean,160613503.0},
+     {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+CPI [{n,1},
+     {min,149965213},
+     {max,149965213},
+     {med,149965213},
+     {mean,149965213.0},
+     {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+CPI [{n,1},
+     {min,170281890},
+     {max,170281890},
+     {med,170281890},
+     {mean,170281890.0},
+     {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+CPI [{n,1},
+     {min,162447264},
+     {max,162447264},
+     {med,162447264},
+     {mean,162447264.0},
+     {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+CPI [{n,1},
+     {min,147759442},
+     {max,147759442},
+     {med,147759442},
+     {mean,147759442.0},
+     {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+CPI [{n,1},
+     {min,172695558},
+     {max,172695558},
+     {med,172695558},
+     {mean,172695558.0},
+     {std_dev,0.0}]
+Done with examples on 14 cores.
+--------
+=== 16 workers ===
+CPI [{n,1},
+     {min,175062125},
+     {max,175062125},
+     {med,175062125},
+     {mean,175062125.0},
+     {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+CPI [{n,1},
+     {min,166490266},
+     {max,166490266},
+     {med,166490266},
+     {mean,166490266.0},
+     {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+CPI [{n,1},
+     {min,181622797},
+     {max,181622797},
+     {med,181622797},
+     {mean,181622797.0},
+     {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+CPI [{n,1},
+     {min,184789353},
+     {max,184789353},
+     {med,184789353},
+     {mean,184789353.0},
+     {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+CPI [{n,1},
+     {min,187588504},
+     {max,187588504},
+     {med,187588504},
+     {mean,187588504.0},
+     {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+CPI [{n,1},
+     {min,169574955},
+     {max,169574955},
+     {med,169574955},
+     {mean,169574955.0},
+     {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+CPI [{n,1},
+     {min,172506550},
+     {max,172506550},
+     {med,172506550},
+     {mean,172506550.0},
+     {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+CPI [{n,1},
+     {min,166711655},
+     {max,166711655},
+     {med,166711655},
+     {mean,166711655.0},
+     {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+CPI [{n,1},
+     {min,178348303},
+     {max,178348303},
+     {med,178348303},
+     {mean,178348303.0},
+     {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+CPI [{n,1},
+     {min,175998545},
+     {max,175998545},
+     {med,175998545},
+     {mean,175998545.0},
+     {std_dev,0.0}]
+Done with examples on 16 cores.
+--------
+=== 18 workers ===
+CPI [{n,1},
+     {min,186111644},
+     {max,186111644},
+     {med,186111644},
+     {mean,186111644.0},
+     {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+CPI [{n,1},
+     {min,194243847},
+     {max,194243847},
+     {med,194243847},
+     {mean,194243847.0},
+     {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+CPI [{n,1},
+     {min,215352573},
+     {max,215352573},
+     {med,215352573},
+     {mean,215352573.0},
+     {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+CPI [{n,1},
+     {min,215179439},
+     {max,215179439},
+     {med,215179439},
+     {mean,215179439.0},
+     {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+CPI [{n,1},
+     {min,182780820},
+     {max,182780820},
+     {med,182780820},
+     {mean,182780820.0},
+     {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+CPI [{n,1},
+     {min,183421694},
+     {max,183421694},
+     {med,183421694},
+     {mean,183421694.0},
+     {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+CPI [{n,1},
+     {min,184952006},
+     {max,184952006},
+     {med,184952006},
+     {mean,184952006.0},
+     {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+CPI [{n,1},
+     {min,181426445},
+     {max,181426445},
+     {med,181426445},
+     {mean,181426445.0},
+     {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+CPI [{n,1},
+     {min,192762766},
+     {max,192762766},
+     {med,192762766},
+     {mean,192762766.0},
+     {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+CPI [{n,1},
+     {min,180034832},
+     {max,180034832},
+     {med,180034832},
+     {mean,180034832.0},
+     {std_dev,0.0}]
+Done with examples on 18 cores.
+--------
+=== 20 workers ===
+CPI [{n,1},
+     {min,145696495},
+     {max,145696495},
+     {med,145696495},
+     {mean,145696495.0},
+     {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+CPI [{n,1},
+     {min,167630806},
+     {max,167630806},
+     {med,167630806},
+     {mean,167630806.0},
+     {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+CPI [{n,1},
+     {min,145467316},
+     {max,145467316},
+     {med,145467316},
+     {mean,145467316.0},
+     {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+CPI [{n,1},
+     {min,176932149},
+     {max,176932149},
+     {med,176932149},
+     {mean,176932149.0},
+     {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+CPI [{n,1},
+     {min,147386808},
+     {max,147386808},
+     {med,147386808},
+     {mean,147386808.0},
+     {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+CPI [{n,1},
+     {min,165157044},
+     {max,165157044},
+     {med,165157044},
+     {mean,165157044.0},
+     {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+CPI [{n,1},
+     {min,146601928},
+     {max,146601928},
+     {med,146601928},
+     {mean,146601928.0},
+     {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+CPI [{n,1},
+     {min,183915712},
+     {max,183915712},
+     {med,183915712},
+     {mean,183915712.0},
+     {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+CPI [{n,1},
+     {min,171813084},
+     {max,171813084},
+     {med,171813084},
+     {mean,171813084.0},
+     {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+CPI [{n,1},
+     {min,146661482},
+     {max,146661482},
+     {med,146661482},
+     {mean,146661482.0},
+     {std_dev,0.0}]
+Done with examples on 20 cores.
+--------
+=== 22 workers ===
+CPI [{n,1},
+     {min,210809728},
+     {max,210809728},
+     {med,210809728},
+     {mean,210809728.0},
+     {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+CPI [{n,1},
+     {min,202012443},
+     {max,202012443},
+     {med,202012443},
+     {mean,202012443.0},
+     {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+CPI [{n,1},
+     {min,185916982},
+     {max,185916982},
+     {med,185916982},
+     {mean,185916982.0},
+     {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+CPI [{n,1},
+     {min,174796749},
+     {max,174796749},
+     {med,174796749},
+     {mean,174796749.0},
+     {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+CPI [{n,1},
+     {min,198328169},
+     {max,198328169},
+     {med,198328169},
+     {mean,198328169.0},
+     {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+CPI [{n,1},
+     {min,180310873},
+     {max,180310873},
+     {med,180310873},
+     {mean,180310873.0},
+     {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+CPI [{n,1},
+     {min,178929023},
+     {max,178929023},
+     {med,178929023},
+     {mean,178929023.0},
+     {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+CPI [{n,1},
+     {min,212140381},
+     {max,212140381},
+     {med,212140381},
+     {mean,212140381.0},
+     {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+CPI [{n,1},
+     {min,189355659},
+     {max,189355659},
+     {med,189355659},
+     {mean,189355659.0},
+     {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+CPI [{n,1},
+     {min,166157678},
+     {max,166157678},
+     {med,166157678},
+     {mean,166157678.0},
+     {std_dev,0.0}]
+Done with examples on 22 cores.
+--------
+=== 24 workers ===
+CPI [{n,1},
+     {min,190896853},
+     {max,190896853},
+     {med,190896853},
+     {mean,190896853.0},
+     {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+CPI [{n,1},
+     {min,195146693},
+     {max,195146693},
+     {med,195146693},
+     {mean,195146693.0},
+     {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+CPI [{n,1},
+     {min,208784185},
+     {max,208784185},
+     {med,208784185},
+     {mean,208784185.0},
+     {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+CPI [{n,1},
+     {min,174325331},
+     {max,174325331},
+     {med,174325331},
+     {mean,174325331.0},
+     {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+CPI [{n,1},
+     {min,203789390},
+     {max,203789390},
+     {med,203789390},
+     {mean,203789390.0},
+     {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+CPI [{n,1},
+     {min,214524902},
+     {max,214524902},
+     {med,214524902},
+     {mean,214524902.0},
+     {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+CPI [{n,1},
+     {min,188419781},
+     {max,188419781},
+     {med,188419781},
+     {mean,188419781.0},
+     {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+CPI [{n,1},
+     {min,223404707},
+     {max,223404707},
+     {med,223404707},
+     {mean,223404707.0},
+     {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+CPI [{n,1},
+     {min,210644482},
+     {max,210644482},
+     {med,210644482},
+     {mean,210644482.0},
+     {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+CPI [{n,1},
+     {min,174655228},
+     {max,174655228},
+     {med,174655228},
+     {mean,174655228.0},
+     {std_dev,0.0}]
+Done with examples on 24 cores.
+--------
+=== 26 workers ===
+CPI [{n,1},
+     {min,194799037},
+     {max,194799037},
+     {med,194799037},
+     {mean,194799037.0},
+     {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+CPI [{n,1},
+     {min,193009123},
+     {max,193009123},
+     {med,193009123},
+     {mean,193009123.0},
+     {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+CPI [{n,1},
+     {min,225239736},
+     {max,225239736},
+     {med,225239736},
+     {mean,225239736.0},
+     {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+CPI [{n,1},
+     {min,186700973},
+     {max,186700973},
+     {med,186700973},
+     {mean,186700973.0},
+     {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+CPI [{n,1},
+     {min,207514209},
+     {max,207514209},
+     {med,207514209},
+     {mean,207514209.0},
+     {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+CPI [{n,1},
+     {min,223742504},
+     {max,223742504},
+     {med,223742504},
+     {mean,223742504.0},
+     {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+CPI [{n,1},
+     {min,203365566},
+     {max,203365566},
+     {med,203365566},
+     {mean,203365566.0},
+     {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+CPI [{n,1},
+     {min,207080203},
+     {max,207080203},
+     {med,207080203},
+     {mean,207080203.0},
+     {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+CPI [{n,1},
+     {min,195585021},
+     {max,195585021},
+     {med,195585021},
+     {mean,195585021.0},
+     {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+CPI [{n,1},
+     {min,210386362},
+     {max,210386362},
+     {med,210386362},
+     {mean,210386362.0},
+     {std_dev,0.0}]
+Done with examples on 26 cores.
+--------
+=== 28 workers ===
+CPI [{n,1},
+     {min,171301768},
+     {max,171301768},
+     {med,171301768},
+     {mean,171301768.0},
+     {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+CPI [{n,1},
+     {min,177956234},
+     {max,177956234},
+     {med,177956234},
+     {mean,177956234.0},
+     {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+CPI [{n,1},
+     {min,159528305},
+     {max,159528305},
+     {med,159528305},
+     {mean,159528305.0},
+     {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+CPI [{n,1},
+     {min,169068665},
+     {max,169068665},
+     {med,169068665},
+     {mean,169068665.0},
+     {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+CPI [{n,1},
+     {min,174960306},
+     {max,174960306},
+     {med,174960306},
+     {mean,174960306.0},
+     {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+CPI [{n,1},
+     {min,150880938},
+     {max,150880938},
+     {med,150880938},
+     {mean,150880938.0},
+     {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+CPI [{n,1},
+     {min,191170231},
+     {max,191170231},
+     {med,191170231},
+     {mean,191170231.0},
+     {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+CPI [{n,1},
+     {min,178104179},
+     {max,178104179},
+     {med,178104179},
+     {mean,178104179.0},
+     {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+CPI [{n,1},
+     {min,151909804},
+     {max,151909804},
+     {med,151909804},
+     {mean,151909804.0},
+     {std_dev,0.0}]
+Done with examples on 28 cores.
+--------
+CPI [{n,1},
+     {min,167108434},
+     {max,167108434},
+     {med,167108434},
+     {mean,167108434.0},
+     {std_dev,0.0}]
+Done with examples on 28 cores.
+--------

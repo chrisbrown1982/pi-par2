@@ -24,7 +24,7 @@ def get_data(file):
         for o in out:
             out2.append(int(o))
 
-    avgs = [sum(out2[i:i+5])//5 for i in range(0,len(out2),5)]
+    avgs = [sum(out2[i:i+1]) for i in range(0,len(out2))]
 
     return(avgs)
 

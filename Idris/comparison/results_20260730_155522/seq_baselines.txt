@@ -1,0 +1,6 @@
+# shared sequential baselines (Ts) -- Thu Jul 30 22:57:56 BST 2026
+sumeuler 40000: mean 178.6758 s over 3 reps (us: [178759827,178300800,
+                                                  178966867])
+cpi 1000000000: mean 449.7847 s over 3 reps (us: [870191587,228547285,
+                                                  250615252])
+matmul 4000: skipped (SEQ_MATMUL=0); reuse PT Ts=6230 s (identical seq code)
